@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/Mitch.jpg" type="image/x-icon">
+    <title>Listas e imagens </title>
+    <link rel="stylesheet" href="style.css" media="screen">
+    <link rel="stylesheet" href="impressora.css" media="print">
+    <style id="cor-padrão-de-marcação">
+        mark {
+            background-color: limegreen;
+        }
+    </style>
+    <!--Usar style dentro de head para adicionar uma característica visual padrão à uma tag-->
+    <!--nesse caso, é uma regra geral, mas pra fugir da regra, pode-se usar style dentro da tag que se quer mecher-->
+</head>
+<body>
+    <header>
+        <h1>Site de teste para estudo sobre HTML</h1>
+        <p>Que cabeçalho maravilhoso vc tem hein.</p>
+    </header>
+        <figure id="figure">
+            <a href="imagens/Mitch.jpg" target="_blank"><img src="imagens/Mitch.jpg" alt="Logo da página"></a> <!--Usando margin top pra criar uma margen de topo só pra essa imagem-->
+            <figcaption>Criado em: <time datetime="10/31/24">31 de outubro de 2024</figcaption>
+        </figure>
+        <div id="Tédio"><!--Aviso-->
+            <figure>
+                <a href="imagens/aviso.jpg" target="_blank"><img src="imagens/aviso.jpg" alt="Uma placa de aviso"></a>
+                <figcaption>Cuidado! Tédio em frente</figcaption>
+            </figure>
+        </div>
+    <menu>
+        <ul>
+            <li><a href="#">Opção 1</a></li>
+            <li><a href="#">Opção 2</a></li>
+            <li><a href="#">Opção 3</a></li>
+            <li><a href="#">Opção 4</a></li>
+            <li><a href="#">Opção 5</a></li>
+        </ul>
+    </menu>
+    <main>
+        <nav class="Sumário" id="Sumário"><!--Sumário-->
+            <h1>Sumário:</h1>
+            <h2>Use esses atalhos para navegar por onde quiser na página:</h2>
+            <ul type="square"> 
+                <li><a href="#Cabeçalho">Cabeçalho</a></li>
+                <li><a href="#1.0">1.0 Tags de formatação</a></li>
+                    <ul>
+                        <li><a href="#1.1">1.1 Marcadores de texto</a></li>
+                        <li><a href="#1.2">1.2 Letras pequenas</a></li>
+                        <li><a href="#1.3">1.3 Texto deletado (tachado)</a></li>
+                        <li><a href="#1.4">1.4 Texto inserido (sublinhado)</a></li>
+                        <li><a href="#1.5">1.5 Texto sobrescrito e subscrito</a></li>
+                        <li><a href="#1.6">1.6 Citações</a></li>
+                        <li><a href="#1.7">1.7 Citações em bloco</a></li>
+                        <li><a href="#1.8">1.8 Citações de código</a></li>
+                        <li><a href="#1.9">1.9 Criar abreviações</a></li>
+                        <li><a href="#1.10">1.10 Colocar espaços em branco antes dos parágrafos</a></li>
+                    </ul>
+                <li><a href="#2.0">2.0 Tags texto e edição de texto</a></li>
+                    <ul>
+                        <li><a href="#2.1">2.1 Textos editáveis, correção ortográfica</a></li>
+                        <li><a href="#2.2">2.2 Itens arrastável e não arrastáveis</a></li>
+                        <li><a href="#2.3">2.3 Caixas de texto</a></li>
+                    </ul>
+                <li><a href="#3.0">3.0 Criando Listas</a></li>
+                    <ul>
+                        <li><a href="#3.1">3.1 Com unordered lists</a></li>
+                        <li><a href="#3.2">3.2 Com ordered lists</a></li>
+                        <li><a href="#3.3">3.3 Com listas de definição</a></li>
+                    </ul>
+                    <li><a href="#4.0">4.0 Links externos (Hypertexto)</a></li>
+                    <ul>
+                        <li><a href="#4.1">4.1 TAG &lt;a href&gt;</a></li>
+                        <li><a href="#4.2">4.2 Links "no follow"</a></li>
+                        <li><a href="#4.3">4.3 Links de pastas internas</a></li>
+                        <li><a href="#4.4">4.4 Downloads de PDF</a></li>
+                    </ul>
+                <li><a href="#5.0">5.0 Imagens Dinâmicas</a></li>
+                    <ul>
+                        <li><a href="#5.1">5.1 Usando &lt;img&gt;</a></li>
+                        <li><a href="#5.2">5.2 Usando &lt;fig&gt; + &lt;img&gt;</a></li>
+                        <li><a href="#5.3">5.3 Usando &lt;picture&gt; + &lt;img&gt;</a></li>
+                        <li><a href="#5.4">5.4 Imagens Clicáveis</a></li>
+                    </ul>
+                <li><a href="#6.0">6.0 Adicionando audios</a></li>
+                    <ul>
+                        <li><a href="#6.1">6.1 Padrão</a></li>
+                        <li><a href="#6.2">6.2 Exemplos</a></li>
+                    </ul>
+                <li><a href="#7.0">7.0 Separar o conteúdo em blocos</a></li>
+                    <ul>
+                        <li><a href="#7.1">7.1 Usando a TAG &lt;div&gt;</a></li>
+                        <li><a href="#7.2">7.2 Usando a TAG &lt;nav&gt;</a></li>
+                        <li><a href="#7.3">7.3 Usando a TAG &lt;section&gt;</a></li>
+                        <li><a href="#7.4">7.4 Por que não apenas um?</a></li>
+                    </ul>
+                <li><a href="#8.0">8.0 Rodapés</a></li>
+                    <ul>
+                        <li><a href="#8.1">8.1 O que é e como usar</a></li>
+                        <li><a href="#8.2">8.2 Exemplo</a></li>
+                    </ul>
+                <li><a href="#9.0">9.0 Colocando vídeos</a></li>
+                    <ul>
+                        <li><a href="#9.1">9.1 Incorporando vídeos do youtube</a></li>
+                        <li><a href="#9.2">9.2 Colocando de hospedagem própria</a></li>
+                    </ul>
+                <li><a href="#10.0">10.0 CSS</a></li>
+                    <ul>
+                        <li><a href="#10.1">10.1 Cores com CSS</a></li>
+                        <li><a href="#10.2">10.2 Tamanho de fonte</a></li>
+                        <li><a href="#10.3">10.3 Font-weight</a></li>
+                        <li><a href="#10.4">10.4 Italico</a></li>
+                        <li><a href="#10.5">10.5 Sublinhado</a></li>
+                        <li><a href="#10.6">10.6 Apontando IDs em CSS</a></li>
+                        <li><a href="#10.7">10.7 Seletores globais</a></li>
+                        <li><a href="#10.8">10.8 Criando gradientes</a></li>
+                        <li><a href="#10.9">10.9 Outros identificadores de CSS</a></li>
+                        <li><a href="#10.10">10.10 Teste CSS Inline</a></li>
+                    </ul>
+                <li><a href="#11.0">11.0 Classes</a></li>
+                    <ul>
+                        <li><a href="#11.1">11.1 Classes</a></li>
+                        <li><a href="#11.2">11.2 Hierarquia</a></li>
+                    </ul>
+                <li><a href="#12.0">12.0 Hovers</a></li>
+                    <ul>
+                        <li><a href="#12.1">12.1 Criar um hover em uma Div</a></li>
+                        <li><a href="#12.2">12.2 Criar um texto oculto</a></li>
+                        <li><a href="#12.2">12.2 Criando links com hovers</a></li>
+                    </ul>
+                <li><a href="#13.0">13.0 Caixas</a></li>
+                    <ul>
+                        <li><a href="#13.1">13.1 Anatoma de uma caixa</a></li>
+                        <li><a href="#13.2">13.2 Tipos de caixa</a></li>
+                        <ul type="circle"> <!--Types: circle, square and disc-->
+                            <li><a href="#13.2.1">13.2.1 Box-level</a></li>
+                            <li><a href="#13.2.2">13.2.2 Inline-level</a></li>
+                        </ul>
+                    </ul>
+                <li><a href="#14.0">14.0 Tabelas</a></li>
+                    <ul>
+                        <li><a href="#14.1">14.1 Exemplo</a></li>
+                        <li><a href="#14.2">14.2 Efeito zebrado</a></li>
+                        <li><a href="#14.2">14.2 Mesclagem de células</a></li>
+                    </ul>
+                <li><a href="#15.0">15.0 Iframes</a></li>
+                    <ul>
+                        <li><a href="#15.1">15.1 Exemplo básico</a></li>
+                        <li><a href="#15.2">15.2 Seleção de iframe</a></li>
+                        <li><a href="#15.3">15.3 Proteção de iframes</a></li>
+                        <li><a href="#15.4">15.4 Adicionando mapas</a></li>
+                    </ul>
+                <li><a href="#16.0">16.0 Formularios</a></li>
+                    <ul>
+                        <li><a href="#16.1">16.1 Exemplo</a></li>
+                        <li><a href="#16.2">16.2 Label</a></li>
+                        <li><a href="#16.3">16.3 Envio de dados por URL</a></li>
+                        <li><a href="#16.4">16.4 Metodos get e post</a></li>
+                        <li><a href="#16.5">16.5 Outros atributos importantes</a></li>
+                        <li><a href="#16.6">16.6 Fieldset</a></li>
+                    </ul>
+                <li><a href="#17.0">17.0 Media Queries</a></li>
+                    <ul>
+                        <li><a href="#17.1">17.1 O que são</a></li>
+                        <li><a href="#17.2">17.2 Device breakpoints</a></li>
+                    </ul>
+                <li><a href="#18.0">18.0 Menu responsivo</a></li>
+                    <ul>
+                    </ul>
+            </ul> 
+        </nav>
+        <section><!--1.0 Formatação de texto-->
+            <h1 id="1.0">1.0 Tags de Formatação</h1>
+                <h2 id="1.1">1.1 Marcadores de texto</h2>
+                <p>Use &lt;mark style="background-color: xxx&gt;" (texto) &lt;/mark&gt; para marcar textos em uma <mark style="background-color: red;">cor não padrão</mark>.</p>
+                <p>Use &lt;mark&gt; para marcar textos em na <mark> na cor padrão</mark>, que é amarelo, mas nesse caso foi definida como verde em &lt;head&gt;(<a href="#cor-padrão-de-marcação">veja</a>)</p> <!--Essa por padrão sai verde, como definido em head-->
+                <h2 id="1.2">1.2 Letras pequenas</h2>
+                <p>Texto <small>pequeno</small></p>
+                <h2 id="1.3">1.3 Texto deletado (tachado)</h2>
+                <p>Texto <del>deletado</del></p> <!--substitui o <s>-->
+                <p>Textp <s>deletado</s></p>
+                <h2 id="1.4">1.4 Texto inserido (sublinhado)</h2>
+                <p>Texto <ins>inserido</ins></p> <!--substitui o <u>-->
+                <p>Texto <u>inserido</u></p>
+                <h2 id="1.5">1.5 Texto sobrescrito e subscrito</h2>
+                <p>Texto <sup>sobrescrito</sup> como em x<sup>-20</sup>=10</p>
+                <p>Texto <sub>subscrito</sub> como em h<sub>2</sub>0</p>
+                <h2 id="1.6">1.6 Citações</h2>
+                <p>Para colocar aspas, usar &lt;q&gt;<br>Por exemplo: <q>O computador é um burro muito rápido.</q> </p> <!--usar <q> permite que a citação seja interpreta como tal, não apenas um estilo visual-->
+                <h2 id="1.7">1.7 Citações em bloco</h2>
+                <p>Para citar no lado, como se tivesse fazendo um TCC (kkkkk) usa-se &lt;blockquote&gt;</p>
+                <blockquote>
+                    Isso é um exemplo de citação.
+                </blockquote>
+                <h2 id="1.8">1.8 Citações de código</h2>
+                <p>Aqui haverá um texto.</p>
+                <h2 id="1.9">1.9 Criar abreviações</h2>
+                <p>Para atribuir um significado a uma abreviação de modo que leito possa passar o mouse em cima e ler do que se trata, pode-ser usar &lt;abbr&gt;</p>
+                <p><abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+                <h2 id="1.10">1.10 Colocar espaços em branco antes dos parágrafos</h2>
+                <p>Use a propriedade "style" dentro de &lt;p&gt;, assim &lt;p style="white-space: pre"&gt;</p>
+                <p style="white-space: pre;"> 
+                    <pre>
+    Pode ver que esse texto começou depois de um espaço em branco. Como se fosse uma citação kk.
+    O único porém, é que quando vc usa esse estilo, fica um espaço em branco com a tecla "space" do teclado, que pode ser selecionada pelo mouse, enquanto que a tag quote (&lt;q&gt;) cria um espaço semântico, que não pode ser selecionado.
+                    </pre>
+                </p>
+                <p>Pode-se usar a tag &lt;pre&gt; para envelopar o texto, então usar as teclas "TAB" ou "SHIFT"+"TAB" para difinir a quantidade de espaços em branco, que será exibida da forma que for escrita.</p>
+                <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+        </section>
+        <section><!--2.0 Texto e edição-->
+            <h1 id="2.0">2.0 Tags texto e edição de texto</h1>
+                <h2 id="2.1">2.1 Textos editáveis, correção ortográfica</h2>
+                <p>Você pode criar textos editáveis pelo usuário usando o atributo "contenteditable" dentro da tag &lt;p&gt;. <br> Pode-se adiconar o atributo "spellcheck='true'" para que o conteúdo digitado possa ser checado por correção ortográfica. Note que, todo texto por padrão tem correção automática. Se não deseja que o texto seja corrigido, é necessário usar o valor "false" no atributo "contenteditable" Como nesses exemplo:</p>
+                <p contenteditable spellcheck="false">Este é um exemplo em que o texto editável <b>não é</b> corrigido ortograficamente pelo navegador.</p>
+                <p contenteditable="true" spellcheck="true">Este é um exemplo em que o texto editável <b>é</b> corrigido ortograficamente pelo navegador.</p>
+                <h2 id="2.2">2.2 Itens arrastável e não arrastáveis</h2>
+                <p draggable="true">Este é um exemplo de um parágrafo arrastável.</p>
+                <p>Note que para o texto arrastável ser utilizado ele precisa ser relacionado a um evento em JavasCript.</p>
+                <p>Se o texto não tiver essa condição, se atribui o que é característico por padrão do navegador, como textos selecionados, links e imagens. Dessa forma, não é necessário colocar o atributo "draggable" nesses casos. No entanto, caso se deseje que esses elementos sejam desabilitados, pode-se usar o valor "false".</p>
+                <h2 id="2.3">2.3 Caixas de texto</h2>
+                <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+        </section>
+        <section><!--3.0 Listas-->
+            <H1 id="3.0">3.0 Criando Listas</H1>
+                <h2 id="3.1">3.1 Com unordered lists</h2>
+                <ul>
+                    <li>Linguagens de programação para estudar:</li>
+                    <ul type="A">
+                        <li>Phyton</li>
+                        <li>C#</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                    </ul>
+                    <li>Meus Hobbies</li>
+                    <ul type="A">
+                        <li>Ciclismo</li>
+                        <li>Karaokê de Raps, principalmente do Eminem</li>
+                        <li>Games</li>
+                    </ul>
+                </ul>
+                <h2 id="3.2">3.2 Com ordered lists</h2>
+                <ol>
+                    <Li>Jogos favoritos</Li>
+                    <ol type="a">
+                        <li>Sekiro: Shadows Die Twice</li>
+                        <li>God of war</li>
+                        <li>Horizon Zero Dawn</li>
+                        <li>Dark Souls 3</li>
+                        <li>F1:22</li>
+                        <li>Euro Truck Simulator 2</li>
+                        <li>Jedi: Fallen Order</li>
+                        <li>Kanagi Usagi</li>
+                        <li>Marvel Avengers</li>
+                    </ol>
+                </ol>
+                <h2 id="3.3">3.3 Com listas de definição</h2>
+                <p>Mecanismos de busca, quando se pesquisa um termo, dão prioridade para sites que utlizam &lt;dl&gt;</p>
+                <dl>
+                    <dt>HTML</dt> <!--Definition term-->
+                    <dd>Linguagem de marcação para criação de conteúdo em um site</dd> <!--Definition definition kkk-->
+                    <dt>CSS</dt>
+                    <dd>Linguagem de marcação para criação de design em um site</dd>
+                </dl>
+                <p>Ou seja, a ordem de uso é : dl, dt e dd</p>
+                <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+            <h1>Outras listas kk</h1>
+                <ol>
+                    <li>Ordened list</li>
+                    <li>Acordar</li>
+                    <li>Tomar café</li>
+                    <li>Escovar os dentes</li>
+                    <Li>O /li é opcional, não precisa ser colocado se achar que fica desorganizado</Li>
+                </ol>
+                <ol type="I">
+                    <p>Pode-se Usar "Type" para mudar o tipo de ordenação da lista, como neste exemplo</p>
+                    <li>Acordar</li>
+                    <li>Tomar café</li>
+                    <li>Escovar os dentes</li>
+                    <Li>O /li é opcional, não precisa ser colocado se achar que fica desorganizado</Li>
+                </ol>
+                <ol>
+                    <li>Teste 1</li>
+                    <ol type="a">
+                        <li>Teste 1.1 </li>
+                        <li>Teste 1.2 </li>
+                        <li>Teste 1.3 </li>
+                    </ol>
+                    <li>Teste 2</li>
+                    <ol type="a">
+                        <li>Teste 2.1 </li>
+                        <li>Teste 2.2 </li>
+                        <li>Teste 2.3 </li>
+                </ol>
+                <h2>Listas não ordenadas "UL"</h2>
+                <ul type="square">
+                    <li>Pão</li>
+                    <li>Café</li>
+                    <li>Margarina, etc</li>
+                </ul>
+                <ul type="circle"> <!--Disc circle square-->
+                    <li>Pão</li>
+                    <li>Café</li>
+                    <li>Margarina, etc</li>
+                </ul>
+                <h2>UL em colunas:</h2>
+                <ul id="UL_com_colunas">
+                    <li>Pão</li>
+                    <li>Café</li>
+                    <li>Margarina, etc</li>
+                    <li>Pão</li>
+                    <li>Café</li>
+                    <li>Margarina, etc</li>
+                </ul>
+        </section>
+        <section><!--4.0 Links-->
+            <H1 id="4.0">4.0 Links externos(Hypertexto)</H1>
+                <h2 id="4.1">4.1 TAG &lt;a href&gt;</h2>
+                <ol>Mecanismos de pesquisa mais usados:
+                    <li><a href="https://google.com" target="_blank" rel="externos">Google</a></li>
+                    <li><a href="https://bing.com" target="_blank" rel="externos">Bing</a></li>
+                </ol>
+                <p>Interpreta-se:
+                    <dl>
+                        <dt>href</dt>
+                        <dd>referencia</dd>
+                        <dt>target</dt>
+                        <dd>pagina em branco</dd>
+                        <dt>rel</dt>
+                        <dd>indica a relação semantica (link externo)</dd>
+                    </dl>
+                </p>
+                <p><a href="pagina 2.html" rel="next">Ir para próxima página</a></p>
+                <h2 id="4.2">4.2 Links "no follow"</h2>
+                <p>Tratam-se de links dos quais não se quer que o mecanismo de pesquisa adentre, pois não se tem relação com o site de forma direta</p>
+                <p>Por exemplo: <br><a href="https://youtube.com/RodrigoBaltar" target="_blank" rel="nofollow">Patrocinador</a></p>
+                <h2 id="4.3">4.3 Links de pastas internas</h2>
+                <p>Deve-se indicar o caminho correto, indicando as pastas seguintes</p>
+                <p>Pasta interna: <a href="imagens/Olha_fotos!.html" target="_self" rel="next">Olha_Fotos!</a></p>
+                <p>No caso de ser uma página anterior, usar "../", para indicar que volta uma pasta (como no linux).</p>
+                <p>Veja esse exemplo: <a href="./imagens/Olha_fotos!.html" target="_self" rel="next">esse</a>.</p>
+                <h1>Links para Downloads</h1>
+                <h2 id="4.4">4.4 Downloads de PDF</h2>
+                <ul>
+                    <p>Aulas 1-10:</p>
+                    <li><a href="Aulas em PDF/01 - História da Internet.pdf" download="Aula 01 - História da Intenet" target="_blank">Aula 1</a></li>
+                    <li><a href="Aulas em PDF/02 - Como funciona a Internet.pdf" download="Aula 02 - Como funciona a Internet" target="_blank">Aula 2</a></li>
+                    <li><a href="Aulas em PDF/03 - Como funciona HTML e CSS.pdf" download="Aula 03 - Como funciona HTML e CSS" target="_blank">Aula 3</a></li>
+                    <li><a href="Aulas em PDF/04 - Primeiros passos HTML.pdf" download="Aula 04 - Primeiros passos HTML" target="_blank">Aula 4</a></li>
+                    <li><a href="Aulas em PDF/05 - Caracteres, parágrafos e quebras de linha.pdf" download="Aula 05 - Caracteres, parágrafos e quebras de linha" target="_blank">Aula 5</a></li>
+                    <li><a href="Aulas em PDF/06 - Imagens e Favicon.pdf" download="Aula 06 - Imagens e Favicon" target="_blank">Aula 6</a></li>
+                    <li><a href="Aulas em PDF/07 - Hierarquia de títulos.pdf" download="Aula 07 - Hierarquia de títulos" target="_blank">Aula 7</a></li>
+                    <li><a href="Aulas em PDF/08 - Formatação de Textos.pdf" download="Aula 08 - Formatação de Textos" target="_blank">Aula 8</a></li>
+                    <li><a href="Aulas em PDF/09 - Listas HTML.pdf" download="Aula 09 - Listas HTML" target="_blank">Aula 9</a></li>
+                    <li><a href="Aulas em PDF/10 - Ligações em toda parte.pdf" download="Aula 10 - Ligações em toda parte" target="_blank">Aula 10</a></li>
+                </ul>
+                <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+        </section>
+        <section><!--5.0 Imagens-->
+            <H1 id="5.0">5.0 Imagens Dinâmicas</H1>
+                <h2 id="5.1">5.1 Usando &lt;img&gt;</h2>
+                <p>Usa-se a tag &lt;img&gt; para indicar a fonte e o texto alternativo da imagem (para acessibilidade). É a forma mais simples de adicionar imagens.</p>
+                <img src="imagens/Paisagem_da_Caatinga_Paraibana-640.JPG" alt="Caatinga">
+                <h2 id="5.2">5.2 Usando &lt;fig&gt; + &lt;img&gt;</h2>
+                <p>A tag &lt;fig&gt; permite colocar legendas na imagem presente na tag &lt;img&gt;, como nesse exemplo</p>
+                <figure>
+                    <img src="imagens/Paisagem_da_Caatinga_Paraibana-640.JPG" alt="Caatinga">
+                    <figcaption>Paisagem da Caatinga Paraibana</figcaption>
+                </figure>
+                <h2 id="5.3">5.3 Usando &lt;picture&gt; + &lt;img&gt;</h2>
+                <p>Permite o uso de imagens de diversas resoluções diferentes, para tornar o site otimizado e dinâmico. </p>
+                <p>Usa-se a tag &lt;pic&gt; para envelopar as tags &lt;img&gt; e &lt;source media&gt; em que:</p>
+                    <dl>
+                        <dt>picture</dt>
+                        <dd>indica que o que estará envelopado é uma imagem.</dd>
+                        <dt>img src</dt>
+                        <dd>É a imagem original a ser mostrada para sites em janelas grandes.</dd>
+                        <dt>source media</dt>
+                        <dd>Deve vir acima de "img src" e conter a próxima menor imagem, diminuindo gradativamente.</dd>
+                    </dl>
+                </p>
+                <pre>
+                    <code>
+&lt;source media="(max-width: 1230px)" srcset="imagens/Paisagem_da_Caatinga_Paraibana-640.JPG" type="image/JPG"&gt;
+&lt;source media="(max-width: 1919px)" srcset="imagens/Paisagem_da_Caatinga_Paraibana-1280.JPG" type="image/JPG"&gt;
+&lt;img src="imagens/Paisagem_da_Caatinga_Paraibana-1920.JPG" alt="Imagem Flexível"&gt;
+                    </code>
+                </pre>
+                <p>Deve-se remover 1 pixel em "max-width", de forma que se a tela é 1920p, assim que o tamanho dela for diminuído irá carregar a imagem imediatamente menor.</p>
+                <p>Tente abrir essa imagem em janelas de tamanhos diferentes no navegador. <br>Dica: o atalho do <code>windows+shift+m</code> aciona uma ferramenta do App <i>Power Toys</i> chamada "Screen Ruller", que permite medir o tamanho da tela, o que é util para testar o tamanho de tela em navegadores e ver como as imagens correspondem.</p>
+                <picture>
+                    <source media="(max-width: 1330px)" srcset="imagens/Paisagem_da_Caatinga_Paraibana-640.JPG" type="image/JPG">
+                    <source media="(max-width: 1919px)" srcset="imagens/Paisagem_da_Caatinga_Paraibana-1280.JPG" type="image/JPG">
+                    <img src="imagens/Paisagem_da_Caatinga_Paraibana-1920.JPG" alt="Imagem Flexível">
+                </picture>
+                <h2 id="5.4">5.4 Imagens Clicáveis</h2>
+                <p>Para fazer imagens levarem a links elas devem ser envelopadas na tag &lt;a&gt;, veja:</p>
+                <a href="imagens/Paisagem_da_Caatinga_Paraibana-full.JPG" target="_blank"><img src="imagens/Paisagem_da_Caatinga_Paraibana-640.JPG" alt="Imagem clicável da caatinga paraibana"></a>
+                <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+                <h1>Imagens</h1>
+                <picture>
+                    <a href="imagens/Sem título.jpg" target="_blank"><img src="imagens/Sem título.jpg" alt="Cores"></a>
+                    <p>Clique <a href="imagens/Sem título.jpg" download="Cores" target="_blank">aqui</a> para fazer o download (ou clique na imagem)</p>
+                </picture>  
+                <section id="backgroundgimge_text"><!--Background Images-->
+                    <h1>Este é um lorem para fazermos um paragrafo com background image</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, magni explicabo reiciendis odio, doloribus at repellat accusantium adipisci magnam rerum molestiae in tenetur, impedit rem hic. Id aspernatur possimus iusto?</p> 
+                </section>
+        </section>
+        <section><!--6.0 Audio-->
+            <H1 id="6.0">6.0 Adicionando audios</H1>
+                <h2 id="6.1">6.1 Padrão</h2>
+                <p>Usa se a TAG &lt;audio&gt;. Deve, minimamente, ser adicionados o atributo "controls" e outros atributos úteis são: "loop" e "autoplay"</p>
+                <h2 id="6.2">6.2 Exemplos</h2>
+                <p>Essa é a música tema do site: Still Dre Instrumental Version</p>
+                <p><audio src="audios/Still D.R.E. (Instrumental).mp3" controls loop></audio></p>
+                <p>Ouça no <a href="https://www.youtube.com/watch?v=3MufzuaKfZg" target="_blank">Youtube</a>.</p>
+                <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+                <p>Escuta só, "Still Dre"(Instrumental version):</p>
+                <audio src="audios/Still D.R.E. (Instrumental).mp3" controls class="externo"></audio>
+                <p>Para testar comandos que podem ser utilizados dentro da tag de audio, acesse <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank" class="externo" nofollow>esse</a> link.</p>
+        </section>
+        <section><!--7.0 Blocos-->
+            <h1 id="7.0">7.0 Separar o conteúdo em blocos</h1>
+                <h2 id="7.1">7.1 Usando a TAG &lt;div&gt;</h2>
+                <p>É uma tag não semântica, e serve apenas para organizar o conteúdo.</p>
+                <h2 id="7.2">7.2 Usando a TAG &lt;nav&gt;</h2>
+                <p>É uma tag semântica e identifica o bloco como reponsável pela navegação dentro do site.</p>
+                <h2 id="7.3">7.3 Usando a TAG &lt;section&gt;</h2>
+                <p>É uma tag semântica e identifica o bloco como uma seção temática de conteúdo</p>
+                <h2 id="7.4">7.4 Por que não apenas um?</h2>
+                <p>Deve-se escolher corretamente entre as 3 tags para melhorar o entendimento da estrutura e conteúdo do site pelos mecanismos de pesquisa e plugins, assim como pelo programador.</p>
+                <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+        </section>
+        <section><!--8.0 Rodapés-->
+            <h1 id="8.0">8.0 Rodapés</h1>
+                <h2 id="8.1">8.1 O que é e como usar</h2>
+                <p>Footer são tags semânticas que indicam rodapés para seus ancetrais mais próximos dentro do código, ou seja, pro elemento imediatamente superior as tags de footer.</p>
+                <h2 id="8.2">8.2 Exemplo</h2>
+                <h3>Considerações sobre o mim:</h3>
+                <p>Olha como sou belo!</p>
+                <footer>
+                    &copy; Cercena, Matheus. <time datetime="04/11/24">2024</time>.
+                </footer>
+                <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+        </section>
+        <section><!--9.0 Vídeos-->
+            <h1 id="9.0">9.0 Colocando vídeos</h1>
+                <h2 id="9.1">9.1 Incorporando vídeos do youtube</h2>
+                <p>Basta colar o link:</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VsHUzWy6PpA?si=ijW6voDAJwgB1Eza" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h2 id="9.2">9.2 Colocando de hospedagem própria</h2>
+                <video src="videos/Logitech M650L vs M280 Test Sound.mp4" controls width="560"></video>
+                <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+                <h2>Com hospedagem própria(dentro do próprio site)</h2>
+                <video src="videos/WhatsApp Video 2024-11-04 at 10.55.07_e31f48cd.mp4" type="video/mp4" controls></video>
+                <H2>Incorporando de fontes externas</H2>
+                <p>Basta ir no youtube ou sites de hospedagem de video e selecionar "incorporar", depois colar e o site irá colar um código do iframe. Em que pode-se ajustar a largura e allowlist</p>
+                <p>Nesse caso, o site não hospedará o vídeo, apenas o link para o site.</p>
+                <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/VsHUzWy6PpA?si=cKz-fpqX2GLUQRck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+        </section>
+        <section><!--10.0 CSS-->
+            <h1 id="10.0">10.0 CSS</h1>
+                <h2 id="10.1" style="background-color: rgba(rgb(43, 16, 16), green, blue, alpha);" >10.1 Cores com CSS</h2>
+                    <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque consectetur dolor amet quae, corrupti aliquid minus debitis architecto, veritatis perferendis, ipsum adipisci dolorum! Quae perferendis perspiciatis amet mollitia suscipit tempore!</p>
+                <h2 id="10.2">10.2 Tamanho de fonte</h2>
+                    <p style="font-size:0.75em;">O tamanho 16px de fonte é o padrão. 1 Em é uma medida absoluta, da altura da letra M. Equivale ao padrão do navegador, que normalmente é 16x mas se adapta aos tamanhos de tela diferentes e a diferentes zooms do navegador</p>
+                <h2 id="10.3">10.3 Font-weight</h2>
+                    <p style="font-weight: bold;">Usar font weight pra alterar o negrito das fontes, podendo-se usar de light, normal, bold ou bolder. Assim como usar valores de 100-900, que fornece mais opções as 4 padrão, mas nem todas as fontes tem</p>
+                <h2 id="10.4">10.4 Italico</h2>
+                    <p style="font-style: italic;">Para usar italico, usa-se font-style.</p>
+                <h2 id="10.5">10.5 Sublinhado</h2>
+                    <p style="text-decoration: underline;">Para usar sublinhado, usa-se text-decoration.</p>   
+                <h2 id="10.6">10.6 Apontando IDs em CSS</h2>
+                    <p>Usar "#" para indicar, como no exemplo abaixo:</p>
+                    <p>
+                        <pre id="Identificação_Aleatória">
+                            <code>
+            &lt;style&gt;
+                #Identificação_Aleatória {
+                    background-color: rgb(175, 152, 152);
+                    text-align: left;
+                }
+            &lt;style&gt;
+                            </code>
+                        </pre>
+                    </p>
+                <h2 id="10.7">10.7 Seletores globais</h2>
+                    <p>Usar "* {...}" dentro de estilo</p>
+                <section  id="s2">
+                    <h2 id="10.8">10.8 Criando gradientes</h2>
+                        <p>Use o estilo {background-image: linear-gradient(to left, cor1, cor2, ...cor"n");}
+                        </p>
+                        <p>Opções nesses casos é usar radius-gradient e trocar to left por circle, colocar angulos como 45deg, ou to bottom, etc</p>
+                        <P>pode-se adicionar porcentagens de representação para cada cor apenas colocando a porcentagem do lado da cor</P>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius atque eveniet a itaque voluptate reprehenderit fugit ut odio quo aspernatur sunt libero tempora suscipit inventore ipsum modi, expedita dolor optio?</p>
+                </section>
+                <h2 id="10.9"> 10.9 Outros identificadores de CSS</h2>
+                    <p> 
+                        /* <br>
+                        # = id <br>
+                        . = class <br>
+                        : = pseudo-class <br>
+                        :: = pseudo-element <br>
+                        > = children <br>
+                        */
+                    </p>
+            <span style= "font-family: 'Arial', Helvetica, sans-serif";><!-- Repare no uso da tag span-->
+                <h1 style="color: mediumseagreen; font-size: 2em;">10.9 Teste CSS Inline</h1>
+                    <h2 id="10.10">10.10 Teste CSS Inline</h2>
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo est vitae cupiditate nostrum aspernatur debitis numquam sapiente quam similique temporibus, commodi reprehenderit harum distinctio sit provident, fugiat obcaecati fuga rem!</p>
+            </span>
+            <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+        </section>
+        <section><!--11.0 Classes-->
+            <H1 id="11.0">11.0 Classes</H1>
+                <h2 id="11.1">11.1 Pra que servem</h2>
+                <p>Servem pra criar IDs que podem ser aplicados a várias tags.</p>
+                <p>Depois, no CSS, usa-se .nome_da_classe para identificar a classe, seguido das chaves e dos estilos daquela classe.</p>
+                <p>Se quiser separar as classes por tag, se coloca o nome da tag antes do ponto, tipo h2.nome_da_classe</p>
+                <h2 id="11.2">11.2 Hierarquia</h2>
+                <p>Pode-se atribuir mais de uma classe a uma tag, separando por espaços: class="classe1 classe2"</p>
+                <P>Os IDs sobrepõem as classes</P>
+                <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+        </section>
+        <section><!--12.0 Hovers-->
+            <H1 id="12.0">12.0 Hovers</H1>
+                <h2 id="12.1">12.1 Criar um hover em uma Div</h2>
+                <p>Usar a seguinte estrutura:</p>
+                <p>div: hover</p>
+                <h2 id="12.2">12.2 Criar um texto oculto</h2>
+                <p>Usar o seguinte código em CSS:</p>
+                <p> No CSS:
+            <pre>
+                <code>
+        div: hover {
+            font-weight: bold;
+        }
+        div > p  {
+            display: none;
+        }
+        div: hover > p {
+            font-style: italic;
+                    }
+                </code>
+            </pre>
+                </p>
+                <p>No HTML:</p>
+                        <div class="teste">
+                            Aqui há um Menu
+                            <p>ops, vc me achou...</p>
+                            <p>(hehe, funcionou)</p>
+                        <br>Passe o mouse aqui em cima
+                        </div>
+                <h2 id="10.3">12.3 Criando links com hovers</h2>
+                <p>
+                    <ul>
+                        <li><a href="https://youtube.com/@Certheus" target="_blank">Certheus no youtube</a></li>
+                        <li><a href="https://youtube.com/@RodrigoBaltar" target="_blank">Rodrigo Baltar no youtube</a></li>
+                    </ul>
+                </p>
+                <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+        </section>  
+        <section><!--13.0 Caixas-->
+            <h1 id="13.0">13.0 Caixas</h1>
+                <h2 id="13.1">13.1 Anatoma de uma caixa</h2>
+                    <P>Toda tag em html possui uma caixa. Abaixo estão listados alguns conceitos sobre:</P>
+                    <ul>
+                        Padding acochoamento interno
+                        Margin (paddig externo)
+                        Outline contorno/borda externa
+                        height
+                        width
+                        border borda
+                    </ul>
+                <h2 id="13.2">13.2 Tipos de caixa</h2>
+                    <h3 id="13.2.1">13.2.1 Box-level</h3>
+                    <p>São as tagas que quebram linhas, como: </p>
+                    <ul>
+                        <li>Div</li>
+                        <li>h1-h6</li>
+                        <li>p</li>
+                        <li>main</li>
+                        <li>header</li>
+                        <li>nav</li>
+                        <li>article</li>
+                        <li>aside</li>
+                        <li>footer</li>
+                        <li>form</li>
+                        <li>video</li>
+                    </ul>
+                    <h3 id="13.2.2"> 13.2.2 Inline-level</h3>
+                        <p>São as tagas que <b>não</b> quebram linhas, como: </p>
+                        <ul>
+                            <li>span</li>
+                            <li>a</li>
+                            <li>code</li>
+                            <li>small</li>
+                            <li>strong</li>
+                            <li>em</li>
+                            <li>sup e sub</li>
+                            <li>label</li>
+                            <li>button</li>
+                            <li>input</li>
+                            <li>select</li>
+                        </ul>
+            <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+        </section>
+        <Section><!--14.0 Tabelas-->
+            <h1 id="14.0">14.0 Tabelas</h1>
+                <h2>Exemplo</h2>
+                    <div id="tabela">
+                        <table>
+                            <caption>Clima por mês</caption>
+                            <colgroup>
+                            <col>
+                            <col class="c2">
+                            <col>
+                            <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>—</th>
+                                    <th scope="col">Dias com chuva</th>
+                                    <th scope="col">Dias com sol</th>
+                                    <th scope="col">Dias nublados</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Março</th>
+                                    <td>4</td>
+                                    <td>7</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <th>Abril</th>
+                                    <td>8</td>
+                                    <td>5</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <th>Maio</th>
+                                    <td>6</td>
+                                    <td>6</td>
+                                    <td>3</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td scope="row" style="background-color: yellow;">Soma</td>
+                                    <td>#</td>
+                                    <td>#</td>
+                                    <td>#</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" colspan="3" style="background-color: red;">Total</td>
+                                    <td>#+#+#</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                <h2 id="14.1">14.1 Efeito zebrado</h2>
+                    <p>Usar o seguinte código:
+        <pre>
+            <code>
+            /*nth é enésino ou nth*/
+    tbody > tr:nth-child(odd) { /*usar 2n dentro dos parenteses para ir 1-sim-1-não oou 2n-1 para ter o mesmo efeito de odd*/
+        background-color: lightgray;
+    }
+    tbody > tr:nth-child(even) { /*even=par e odd=ímpar */
+        background-color: white;
+    }
+            </code>
+        </pre>
+                <h2 id="14.2">14.2 Mesclagem de células</h2>
+                    <p>
+                        Usar a TAG &lt;colspan&gt; para celulas horizontais e &lt;rowspan&gt; para celulas verticais.. 
+                    </p>
+                    <h2>Significado semântico de colunas e linhas</h2>
+                    <p>Usar a tag &lt;scope&gt;, par identificar o que é, aí usa row ou col</p>
+                    <p>Usar rowgroup e colgroup para identificar que o head aplica-se a um grupo de linhas ou colunas, no caso de células mescladas</p>
+                    <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+        </Section>
+        <section><!--15.0 Iframes-->
+            <h1 id="15.0">15.0 Iframes</h1>
+                <h2 id="15.1">15.1 Exemplo básico</h2>
+                    <p> Vamos testar imbutindo um pdf, veja: </p>
+                    <iframe src="PDFs/A.M.ComércioDeArtigosdeVestuário_1722-23.pdf" frameborder="1px" style=" width: 100%; height: 700px;"><a href="PDFs/A.M.ComércioDeArtigosdeVestuário_1722-23.pdf" target="_blank">exemplo</a></iframe>
+                <h2 id="15.2">15.2 Seleção de iframe</h2>
+                    <p>Pode-se usar o atributo name para dar ao iframe uma identificação para alternar janelas:</p>
+                    <ul>
+                        <li><a href="imagens/pexels-eberhardgross-691668.jpg" target="frame">Wallpaper 1</a></li>
+                        <li><a href="imagens/pexels-iriser-2781760.jpg" target="frame">Wallpaper 2</a></li>
+                        <li><a href="imagens/pexels-pok-rie-33563-2049422.jpg" target="frame">Wallpaper 3</a></li>
+                        <li><a href="imagens/pexels-sanaan-3052361.jpg" target="frame">Wallpaper 4</a></li>
+                        <li><a href="imagens/pexels-sohi-807598.jpg" target="frame">Wallpaper 5</a></li>
+                    </ul>
+                    <iframe width="800px" height="450px" srcdoc="<h1>Escolha uma das opções acima</h>" id="tela" name="frame" frameborder="0"></iframe>
+                <h2 id="15.3">15.3 Proteção de iframes</h2>
+                    <p>Usar dentro do iframe, os tributos:"referrer-policy: 'no-referrer'" (impedir capturas de dados) e "'sandbox: sandbox'" (para bloquear todos formularios) ou "'sandbox: allow-same-origin allow-forms allow-scripts'" (autoexplicativo)</p>
+                    <iframe src="https://ecgglass.com/ecg_glass/login/login.php" frameborder="1" sandbox="allow-forms allow-scripts" referrerpolicy="no-referrer" width="800px" height="450px"></iframe>
+                <h2 id="15.4">15.4 Adicionando mapas</h2>
+                    <p>Incorporando do Google maps</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14145.355152043003!2d-48.608832!3d-27.583024299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1733327500771!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>Do waze:</p>
+                    <iframe src="https://embed.waze.com/iframe?zoom=15&lat=-27.580625&lon=-48.613858&ct=livemap" width="600" height="450" allowfullscreen></iframe>
+                    <section id="telefone"><!--Telefone teste-->
+                        <div id="telefone">
+                            <iframe src="imagens/tela-home.jpg" frameborder="0" id="android" name="tela_android"></iframe>
+                        </div>
+                    <section id="redes_sociais"><!--Botões de redes sociais-->
+                        <a href="index.html" target="tela_android"><img src="imagens/logo-home.jpg" alt="home"></a>
+                        <a href="sites externos/youtube.html" target="tela_android"><img src="imagens/logo-youtube.jpg" alt="youtube"></a>
+                        <a href="https://x.com" target="tela_android"><img src="imagens/logo-twitter.jpg" alt="twitter"></a>
+                        <a href="https://instagram.com" target="tela_android"><img src="imagens/logo-instagram.jpg" alt="instagram"></a>
+                        <a href="https://github.com" target="tela_android"><img src="imagens/logo-github.jpg" alt="github"></a>
+                        <a href="https://facebook.com" target="tela_android"><img src="imagens/logo-facebook.jpg" alt="facebook"></a>
+                    </section>
+                </section>
+                <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+        </section>
+        <section><!--16.0 Formularios-->
+            <h1 id="16.0">Formularios</h1>
+                <h2 id="16.1">16.1 Exemplo</h2>
+                    <form action="cadastro.php" method="post" autocomplete="on">
+                        <p>
+                            <label for="iuser">Usuário:</label> 
+                            <input type="text" name="user" id="iuser" required minlength="3" maxlength="15" placeholder="Nome de Usuário" autocomplete="username">
+                        </p>
+                        <p>
+                            <label for="isenha">Senha</label> 
+                            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="16" placeholder="Min. 8 caracteres" autocomplete="current-password">
+                        </p>
+                        <p>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Limpar">
+                        </p>
+                    </form>
+                <h2 id="16.2">16.2 Label</h2>
+                    <p>É importante relacionar o texto antes do formulario a caixa de input, pois isso ajuda mecanismos de pesquisa e facilita a seleção do formulario em smartphones.</p>
+                <h2 id="16.3">16.3 Envio de dados por URL</h2>
+                    <p>Os dados enviados por um formulario sao separados na url por um "?", em que tudo que vier depois do interrogação é um dado, sendo que cada dado é separado por ecomercial("&")</p>
+                <h2 id="16.4">16.4 Metodos get e post</h2>
+                    <p>O método padrão é Get.</p>
+                    <ul>
+                        <li>get: dados não sensíveis até 3000 bytes(3000 letras), urls compartilhaveis</li>
+                        <li>post: dados sensíveis (usar junto com HTTPS), imagens/arquivos (não podem ser enviadas por url)</li>
+                    </ul>
+                <h2 id="16.5">16.5 Outros atributos importantes</h2>
+                    <ul>
+                        <li>required: dentro de input, para indicar que o formulário é de preenchimento obrigatorio</li>
+                        <li>minlength e maxlength: quantidade minima e maxima de caracteres</li>
+                        <li>placeholder: texto que fica levemente apagado dentro do formulario</li>
+                        <li>input type="reset": limpa o conteúdo escrito no formulario</li>
+                        <li>autocomplete: off : dentro da tag form, para desligar o autocomplete do navegador</li>
+                        <li>autocomplete: username and current-password: dentro da tag input para ligar o preenchimento automatico do navegador e relacionar com o gerenciador de senhas</li>
+                        <li>input type=</li>
+                        <li>min e max = quantidade minima e maxima de caracteres numericos</li>
+                        <li>value = dentro da tag input substitui o placeholder e coloca um valor dentro ca caixa de formulário</li>
+                        <li>step, dentro de input type number para indicar de quando em quanto os numeros pulam</li>
+                        <li>input type="date", "month", "time" - para colocar datas (month não é compatível com Firefox)</li>
+                        <li>O atributo email - usar com autocomplete="email"</li>
+                        <li>O atributo tel pode ser usado co  autocomplete="tel", ele não permite filtros, mas pode-se usar expressões regulares, chamadas de RegEx(estudar sobre) com o atributo pattern dentro da tag input para criar filtros manuais</li>
+                        <li>pode-se usar html 5 telefone pattern para acar filtros padroes pra telefone, mas essa validaçao depois é feita por php ou javascript</li>
+                    </ul>
+                <h2 id="16.6">16.6 Fieldset</h2>
+                    <p>Usar a tag fieldset para agrupar umconjunto de formularios em uma caixa e usar depois a tag legend para nomear a caixa</p>
+                    <form action="cadastro.php" method="get" autocomplete="off">
+                        <p>
+                            <label for="imedia">Média</label>
+                            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5">
+                        </p>
+                        <fieldset>
+                            <legend>Data e hora</legend>
+                            <p>
+                                <label for="idate">Mês:</label>
+                                <input type="date" name="date" id="idate" placeholder="dia da prova">
+                            </p>
+                            <p>
+                                <label for="ihora">Hora da prova:</label>
+                                <input type="time" name="time" id="itime">
+                            </p>
+                            <p>
+                                <label for="imes">Mes da prova:</label>
+                                <input type="month" name="month" id="imonth">
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Dados cadastrais</legend>
+                            <form action="cadastro.php" method="get" autocomplete="on">
+                                <p>
+                                    <label for="imail">Email:</label>
+                                    <input type="email" name="mail" id="imail" autocomplete="email" >
+                                </p>
+                                <p>
+                                    <label for="itel">Telefone:</label>
+                                    <input type="tel" name="tel" id="itel" autocomplete="tel-national" placeholder="(xx) 9 xxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+                                </p>
+                        </fieldset>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+            </form>
+            <h2>Ckeckboxes</h2>
+            <h3>Com checkbox</h3>
+            <fieldset>
+                <legend>Checklist de projeto</legend>
+                <form action="cadastro.php" method="get" autocomplete="on">
+                    <p>
+                        <input type="checkbox" name="LinhasC" id="iLinhasC"> 
+                        <Label for="iLinhasC">Linhas de Centro</Label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="Cotas" id="iCotas"> 
+                        <Label for="iCotas">Cotas puxadas dos pontos corretos</Label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="Vidros" id="iVidros"> 
+                        <Label for="iVidros">Medida dos vidros</Label>
+                    </p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </form>
+            </fieldset>
+            <h3>Com input type="radio"</h3>
+            <p>Botoes de radio tem que ter o mesmo "name", e só pode marcar um por vez. </p>
+            <fieldset>
+                <legend>Gênero</legend>
+                <form action="cadastro.php" method="get" autocomplete="on">
+                    <p>
+                        <input type="radio" name="genero" id="igenmas">
+                        <label for="igenmas">Masculino</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="genero" id="igenfem">
+                        <label for="igenfem">Feminino</label>
+                    </p>
+                    <p>
+
+                        <input type="radio" name="genero" id="igenni" checked><label for="igenni">Prefiro não informar</label>
+                    </p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </form>
+            </fieldset>
+            <h3>Cores</h3>
+            <fieldset>
+                <legend>Cores</legend>
+            <form action="cadastro.php" method="post" autocomplete="on">
+                <p>
+                    <label for="icor">Selecione uma cor:</label> 
+                    <input type="color" name="color" id="icolor">
+                </p>
+                <p>
+                    <label for="inivel">Qual o nível de seu personagem</label> 
+                    <input type="range" name="nivel" id="inivel" min="1" max="5" value="4">
+                </p>
+                <p>
+                    <label for="ipfp">Selecione sua foto de perfil</label>
+                    <input type="file" name="pfp" id="ipfp">
+                </p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </form>
+            </fieldset>
+            <fieldset>
+                <legend>Estado</legend>
+                <form action="cadastro.php" method="get" autocomplete="on">
+                    <p>
+                        <label for="iestado">Selecione seu estado</label>
+                        <select name="estado" id="iestado">
+                            <option value="" selected>---Escolha---</option>
+                            <optgroup label="Região Sudeste">
+                                <option value="MG">Minas Gerais</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                            </optgroup> 
+                        </select>
+                    </p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                    <p>Pode-se fazer uma caixa de texto simples para que ao digitar no formulario, a caixa de texto sugira uma lista de palavras compatíveis.</p>
+                    <p>
+                        <label for="iestado2">Informe seu estado: </label>
+                        <input type="text" name="estado2" id="iestado2" list="listaestado">
+                        <datalist id="listaestado">
+                            <option value="MG">Minas gerais</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SC">Santa Catarina</option>
+                        </datalist>
+                    </p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </form>
+            </fieldset>
+            <h3>Textarea</h3>
+            <p>Para adicionar caixas de textos pode-se usar a tag textarea. Na tag, adicionar os atributos cols e rows para definir o tamanho dela (sempre relativo a quantidade de caracteres, não a espaço ou pixels)</p>
+            <p>Lembrar de adicionar um label e um form para a textarea.</p>
+            <form action="cadastro.php" method="post">
+                <label for="imensagem">Escreva sua mensagem:</label><br>
+                <textarea name="mensagem" id="imensagem" cols="80" rows="10">Escreva sua mensagem...</textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+            <h3>Outputs</h3>
+            <p>Para mostrar dados que são resultados de outros dados dentro do html, pode-se usar um código em javascript para adicionar a função que fará o cálculo.</p>
+            <form action="cadastro.php">
+                <p>
+                    <label for="ialtura">Altura</label>
+                    <input type="number" name="altura" id="ialtura" required oninput="isoma.innerHTML = Number(ialtura.value) + Number(ilargura.value)">
+                </p>
+                <p>
+                    <label for="ilargura">Largura</label>
+                    <input type="number" name="largura" id="ilargura" required oninput="isoma.innerHTML = Number(ialtura.value) + Number(ilargura.value)">
+                </p>
+                <p>
+                    <label for="isoma">Soma:</label>
+                    <output type="number" name="soma" id="isoma">0</output>
+                </p>
+                <p>
+                    
+                        <label for="irange">Escolha um numero de 0 a 100:</label>
+                        <input type="range" name="range" id="irange" min="0" max="100" value="50" oninput="ival.innerHTML = Number(irange.value)">
+                        <output id="ival">50</output>
+                </p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Resetar">
+            </form>
+            <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+        </section>
+        <section><!--17.0 Media Queries-->
+            <h1 id="17.0">17.0 Media Queries</h1>
+                <h2 id="17.1">17.1 O que são</h2>
+                    <p>São estilos em css feitos para que o site possa ser visualizado em diferentes tipos de telas. Como telas em retrato, paisagem, impressoras, etc. Cria-se 1 ccs para cada, sendo usado 1 css com o atributo media="all" com configurações globais e arquivos separados com media="screen", ou media="print" ou media="screen and (orientation: landscape)" ou media="screen and (orientation: portrait)"</p>
+                    <p>Clique <a href="pagina extra pra ver media query/mediaquery.html" target="_blank">aqui</a> para ir a pagina do site em que pode ver media queries separadas em ação para resposividade</p>
+                    <p>Clique <a href="pagina extra pra ver media query unificadas/mediaqueryunificadaindex.html" target="_blank">aqui</a> para ir a pagina do site em que pode ver media queries unificadas em ação para resposividade</p>
+                <h2 id="17.2">17.2 Device breakpoints</h2>
+                    <p>Dentro de uma media query, se usa a identificação @media screen (min-width: xxxx) {...} para definir uma media query para cada tamanho de tela. Veja nesse código:</p>
+                        <pre>
+                            <code>
+        /* Telas pequenas */
+        @media only screen and (max-width: 599px) {...}
+
+        /* Celulares pequenos e navegadores em tela dividida*/
+        @media only screen and (min-width: 600px) {...}
+        
+        /* Celulares normais em retrato e telas antigas 1366x768p */
+        @media only screen and (min-width: 1080px) {...}
+        
+        /* Celulares em paisagem e telas FullHD */
+        @media only screen and (min-width: 1920) {...}
+        
+        /* TVs e monitores 4k e 1080p */
+        @media only screen and (min-width: 2560px) {...}
+                            </code>    
+                        </pre>
+        <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+        </section>
+        <section><!--18.0 Menus-->
+            <h1 id="18.0">18.0 Menu responsivo</h1>
+                <p>Para fazer menus, usar a tag menu. </p>
+            <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+        </section>
+    </main>
+    <footer>
+        Site criado por <a href="https://youtube.com/@Certheus" target="_blank">Matheus Cercena do Nascimento.</a> em 2024.
+    </footer>
+</body>
+</html>

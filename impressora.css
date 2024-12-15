@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/*Estilos para impressora*/
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    width: 100%;
+}
+
+menu {
+    display: none; /*Usa-se esse método para impedir que uma tag seja mostrada na impressao sem que haja necessidade, como é o caso de menus e links*/
+}
+
+footer::after {
+    content:"Este site foi impresso usando uma linda media query...muah.";
+}
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/Mitch.jpg" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <h1 id="1.0">1.0 Tags de Formatação</h1>
+            <h2 id="1.1">1.1 Marcadores de texto</h2>
+            <p>Use &lt;mark style="background-color: xxx&gt;" (texto) &lt;/mark&gt; para marcar textos em uma <mark style="background-color: red;">cor não padrão</mark>.</p>
+            <p>Use &lt;mark&gt; para marcar textos em na <mark> na cor padrão</mark>, que é amarelo, mas nesse caso foi definida como verde em &lt;head&gt;(<a href="#cor-padrão-de-marcação">veja</a>)</p> <!--Essa por padrão sai verde, como definido em head-->
+            <h2 id="1.2">1.2 Letras pequenas</h2>
+            <p>Texto <small>pequeno</small></p>
+            <h2 id="1.3">1.3 Texto deletado (tachado)</h2>
+            <p>Texto <del>deletado</del></p> <!--substitui o <s>-->
+            <p>Textp <s>deletado</s></p>
+            <h2 id="1.4">1.4 Texto inserido (sublinhado)</h2>
+            <p>Texto <ins>inserido</ins></p> <!--substitui o <u>-->
+            <p>Texto <u>inserido</u></p>
+            <h2 id="1.5">1.5 Texto sobrescrito e subscrito</h2>
+            <p>Texto <sup>sobrescrito</sup> como em x<sup>-20</sup>=10</p>
+            <p>Texto <sub>subscrito</sub> como em h<sub>2</sub>0</p>
+            <h2 id="1.6">1.6 Citações</h2>
+            <p>Para colocar aspas, usar &lt;q&gt;<br>Por exemplo: <q>O computador é um burro muito rápido.</q> </p> <!--usar <q> permite que a citação seja interpreta como tal, não apenas um estilo visual-->
+            <h2 id="1.7">1.7 Citações em bloco</h2>
+            <p>Para citar no lado, como se tivesse fazendo um TCC (kkkkk) usa-se &lt;blockquote&gt;</p>
+            <blockquote>
+                Isso é um exemplo de citação.
+            </blockquote>
+            <h2 id="1.8">1.8 Citações de código</h2>
+            <p>Aqui haverá um texto.</p>
+            <h2 id="1.9">1.9 Criar abreviações</h2>
+            <p>Para atribuir um significado a uma abreviação de modo que leito possa passar o mouse em cima e ler do que se trata, pode-ser usar &lt;abbr&gt;</p>
+            <p><abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+            <h2 id="1.10">1.10 Colocar espaços em branco antes dos parágrafos</h2>
+            <p>Use a propriedade "style" dentro de &lt;p&gt;, assim &lt;p style="white-space: pre"&gt;</p>
+            <p style="white-space: pre;"> 
+                Pode ver que esse texto começou depois de um espaço em branco. Como se fosse uma citação kk.
+                O único porém, é que quando vc usa esse estilo, fica um espaço em branco com a tecla "space" do teclado, que pode ser selecionada pelo mouse, enquanto que a tag quote (&lt;q&gt;) cria um espaço semântico, que não pode ser selecionado.
+            </p>
+            <p>Pode-se usar a tag &lt;pre&gt; para envelopar o texto, então usar as teclas "TAB" ou "SHIFT"+"TAB" para difinir a quantidade de espaços em branco, que será exibida da forma que for escrita.</p>
+            <p><a href="./index.html #Sumário">Clique aqui para voltar a página inicial.</a></p>
+    </main>
+</body>
+</html>

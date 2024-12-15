@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/*Declarações gerais*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+    background-size: contain;
+    background-repeat: no-repeat; /*Inves de colocar size-contain e no-repeat em paisagem e retrato, manter na css geral*/
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 0px #1526a7;
+    padding: 10px;
+}
+
+/*Declarações retrato*/
+
+@media screen and (orientation: portrait) {
+    body {
+        background-image: url(../imagens/cev-portrait.jpg);
+        background-position: center bottom;
+    }
+    
+}
+
+/*Declarações paisagem*/
+
+
+@media screen and (orientation: landscape) {
+    body {
+        background-image: url(../imagens/cev-landscape.jpg);
+        background-position: left bottom;
+    }
+}
+
+/*Device breakpoints*/
+
+ /* Telas pequenas */
+ @media only screen and (max-width: 599px) {
+
+ }
+
+ /* Celulares pequenos e navegadores em tela dividida*/
+ @media only screen and (min-width: 600px) {
+
+ }
+ 
+ /* Celulares normais em retrato e telas antigas 1366x768p */
+ @media only screen and (min-width: 1080px) {
+
+ }
+ 
+ /* Celulares em paisagem e telas FullHD */
+ @media only screen and (min-width: 1920) {
+
+ }
+ 
+ /* TVs e monitores 4k e 1080p */
+ @media only screen and (min-width: 2560px) {
+
+ } 
+
+
+
