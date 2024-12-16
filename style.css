@@ -24,8 +24,26 @@ header {
     transition-duration: 0.5s;
 }
 
-#Menu {
-    margin: 10;
+menu {
+    display: block;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(87, 87, 87);
+    text-align: center;
+    color: white;
+    border-top: 2px solid gray;
+}
+    
+menu > ul > li > a:hover  {
+    background-color: gray;
 }
 
 header > h1 {
@@ -36,6 +54,13 @@ header > h1 {
 header > p {
     color: white;
     text-transform: small-caps;
+}
+
+span#burger {
+    display: block;
+    background-color: rgb(87, 87, 87);
+    padding: 0px;
+    text-align: center;
 }
 
 main {
