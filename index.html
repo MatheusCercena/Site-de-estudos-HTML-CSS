@@ -21,18 +21,18 @@
         <h1>Site de teste para estudo sobre HTML</h1>
         <p>Que cabeçalho maravilhoso vc tem hein.</p>
     </header>
-        <figure id="figure">
-            <a href="imagens/Mitch.jpg" target="_blank"><img src="imagens/Mitch.jpg" alt="Logo da página"></a> <!--Usando margin top pra criar uma margen de topo só pra essa imagem-->
-            <figcaption>Criado em: <time datetime="10/31/24">31 de outubro de 2024</figcaption>
-        </figure>
-        <div id="Tédio"><!--Aviso-->
-            <figure>
+    <div id="inicial"><!--Aviso-->
+        <figure id="Mitch">
+                <a href="imagens/Mitch.jpg" target="_blank"><img src="imagens/Mitch.jpg" alt="Logo da página"></a> <!--Usando margin top pra criar uma margen de topo só pra essa imagem-->
+                <figcaption>Criado em: <time datetime="10/31/24">31 de outubro de 2024</figcaption>
+            </figure>
+            <figure id="Tédio">
                 <a href="imagens/aviso.jpg" target="_blank"><img src="imagens/aviso.jpg" alt="Uma placa de aviso"></a>
                 <figcaption>Cuidado! Tédio em frente</figcaption>
             </figure>
         </div>
     <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
-    <menu id="itens">
+    <menu id="itens" onresize="mudouTamanho()">
         <ul>
             <li><a href="#">Opção 1</a></li>
             <li><a href="#">Opção 2</a></li>
@@ -170,6 +170,8 @@
                     </ul>
                 <li><a href="#18.0">18.0 Menu responsivo</a></li>
                     <ul>
+                        <li><a href="18.1">Como fazer menus</a></li>
+                        <li><a href="18.2">Alterar o cursor</a> </li>
                     </ul>
             </ul> 
         </nav>
@@ -963,10 +965,11 @@
         </section>
         <section><!--18.0 Menus-->
             <h1 id="18.0">18.0 Menu responsivo</h1>
+            <h2 id="18.1">18.1 Como fazer menus</h2>
                 <p>Para fazer menus, usar a tag menu. </p>
                 <p>Buscar icones no site materials.io, do google e então adicionar no inicio do html o link ref que leva a fonte, depois, colocar a tag span seguida da identificação do icone que quer e colar onde quiser no codigo html do site.
                 </p>
-                <h2>Alterar o cursor</h2>
+            <h2 id="18.2">18.2 Alterar o cursor</h2>
                 <p>Para deixar o cursor em forma de maozinha ao passar o mouse em algo, usar a função :hover do css e o atributo cursor: pointer. </p>
             <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
         </section>
@@ -975,6 +978,14 @@
         Site criado por <a href="https://youtube.com/@Certheus" target="_blank">Matheus Cercena do Nascimento.</a> em 2024.
     </footer>
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+
+        }
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none' /*Se ao clicar, o estilo do iten do menu for igual(==) a bloco, então({}) ele recebe none*/
@@ -982,7 +993,6 @@
             else {
                 itens.style.display = 'block' /*se não, ao clicar, recebe block*/
             }
-
         }
     </script>
 </body>

@@ -36,7 +36,7 @@ menu > ul > li > a {
     display: block;
     padding: 10px;
     text-decoration: none;
-    background-color: rgb(87, 87, 87);
+    background-color: rgb(212, 175, 95);
     text-align: center;
     color: white;
     border-top: 2px solid gray;
@@ -349,6 +349,13 @@ section#redes_sociais img:hover {
     padding: 10px;
     text-align: center;
 }
+
+div#inicial  > figure {
+    max-width: 300px;
+    display: inline-block;
+    margin-top: 20px;   
+}
+
 
 @media screen and (min-width: 768px) {
     span#burguer {
