@@ -25,7 +25,7 @@ header {
 }
 
 menu {
-    display: block;
+    display: none; /*Faz o conteudo ficar oculto ate que algo o faça aparecer*/
 }
 
 menu > ul {
@@ -56,11 +56,19 @@ header > p {
     text-transform: small-caps;
 }
 
-span#burger {
+span#burguer {
     display: block;
     background-color: rgb(87, 87, 87);
-    padding: 0px;
+    padding: 10px;
     text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+span#burguer:hover {
+    background-color: white;
+    color: black;
+
 }
 
 main {
@@ -340,4 +348,16 @@ section#redes_sociais img:hover {
     background-color: brown;
     padding: 10px;
     text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    span#burguer {
+        display: none;
+    }    
+    menu {
+        display: block;
+    }
+    menu > ul > li {
+        display: inline-block;
+    }
 }
