@@ -7,6 +7,8 @@
 :root { /*aquilo dentro de root é algo que se aplica a todas as pastas e arquivos dentro do código*/
     --cor0: darkblue; 
     --cor1: darkred;
+    --cor2: rgb(212, 175, 95);
+    --cor3: rgb(87, 87, 87);
 
     --fonte_padrão: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Cursiva2'
@@ -36,7 +38,7 @@ menu > ul > li > a {
     display: block;
     padding: 10px;
     text-decoration: none;
-    background-color: rgb(212, 175, 95);
+    background-color: var(--cor2);
     text-align: center;
     color: white;
     border-top: 2px solid gray;
@@ -58,7 +60,7 @@ header > p {
 
 span#burguer {
     display: block;
-    background-color: rgb(87, 87, 87);
+    background-color: var(--cor3);
     padding: 10px;
     text-align: center;
     color: white;
@@ -356,6 +358,18 @@ div#inicial  > figure {
     margin-top: 20px;   
 }
 
+#Login {
+    : 500px;
+    position: absolute;
+    
+}
+
+#imagem_de_login {
+    height: 300px;
+    width: 300px;
+    position: relative;
+
+}
 
 @media screen and (min-width: 768px) {
     span#burguer {
