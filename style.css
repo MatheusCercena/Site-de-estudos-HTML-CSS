@@ -7,7 +7,7 @@
 :root { /*aquilo dentro de root é algo que se aplica a todas as pastas e arquivos dentro do código*/
     --cor0: darkblue; 
     --cor1: darkred;
-    --cor2: rgb(212, 175, 95);
+    --cor2: rgb(163, 120, 26);
     --cor3: rgb(87, 87, 87);
 
     --fonte_padrão: Arial, Verdana, Helvetica, sans-serif;
@@ -16,6 +16,7 @@
     -- indica uma variável, assim, pode-se usar isso para manter ideias e colocar dentro do texto apenas a ideia. Assim, se for preciso alterar algo depois, muda-se apenas a variável inves de alterar coisa por coisa no texto, além de tornar mais semântico.
     */
 }
+
 header {
     background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -359,15 +360,13 @@ div#inicial  > figure {
 }
 
 #Login {
-    : 500px;
-    position: absolute;
+    min-height: 500px;
     
 }
 
 #imagem_de_login {
     height: 300px;
     width: 300px;
-    position: relative;
 
 }
 
