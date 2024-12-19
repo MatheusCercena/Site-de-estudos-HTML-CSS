@@ -403,15 +403,18 @@
                 <p>Para fazer imagens levarem a links elas devem ser envelopadas na tag &lt;a&gt;, veja:</p>
                 <a href="imagens/Paisagem_da_Caatinga_Paraibana-full.JPG" target="_blank"><img src="imagens/Paisagem_da_Caatinga_Paraibana-640.JPG" alt="Imagem clicável da caatinga paraibana"></a>
                 <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
-                <h1>Imagens</h1>
+                <h2 id="5.5">5.5 Imagens com donwload (não funcionando)</h2>
                 <picture>
                     <a href="imagens/Sem título.jpg" target="_blank"><img src="imagens/Sem título.jpg" alt="Cores"></a>
                     <p>Clique <a href="imagens/Sem título.jpg" download="Cores" target="_blank">aqui</a> para fazer o download (ou clique na imagem)</p>
                 </picture>  
                 <section id="backgroundgimge_text"><!--Background Images-->
-                    <h1>Este é um lorem para fazermos um paragrafo com background image</h1>
+                    <h2 id="5.6">5.6 Este é um lorem para fazermos um paragrafo com background image</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, magni explicabo reiciendis odio, doloribus at repellat accusantium adipisci magnam rerum molestiae in tenetur, impedit rem hic. Id aspernatur possimus iusto?</p> 
                 </section>
+                <h2 id="5.7">5.7 Para fazer imagens que ficam fixas</h2>
+                <p>Para fazer imagens ficarem fixas em algum ponto da tela, se usa a tag float, desde que os elementos sejam um bloco.</p>
+                <p>Ver seção <a href="#Login">Login</a></p>
         </section>
         <section><!--6.0 Audio-->
             <H1 id="6.0">6.0 Adicionando audios</H1>
@@ -974,7 +977,7 @@
             <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
         </section>
         <section id="Login">
-            <form action="cadastro.php">
+            <form action="cadastro.php" id="formulario_de_login">
                 <p>
                     <label for="LoginUsername">Seu nome de usuário:</label>
                     <input type="text" placeholder="Nome de usuário"></input> <br>
@@ -983,8 +986,8 @@
                     <label for="LoginPassword">Sua senha:</label>
                     <input type="text" placeholder="Senha"></input>
                 </p>
-                <img src="imagens/aviso.jpg" alt="aviso de login" id="imagem_de_login">
             </form>
+            <img src="imagens/fundo-madeira.jpg" alt="aviso de login" id="imagem_de_login">
         </section>
     </main>
     <footer>
@@ -997,7 +1000,6 @@
             } else {
                 itens.style.display = 'none'
             }
-
         }
         function clickMenu() {
             if (itens.style.display == 'block') {
@@ -1008,8 +1010,5 @@
             }
         }
     </script>
-    <section>
-        <iframe id="baltazar" width="1020" height="630" src="https://www.youtube.com/embed/bHBeEUIJYSA?si=wjoVKhLfd7wDdFxH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </section>
 </body>
 </html>

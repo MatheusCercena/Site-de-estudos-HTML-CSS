@@ -361,13 +361,20 @@ div#inicial  > figure {
 
 #Login {
     min-height: 500px;
-    
+    padding: 0px;
+    overflow: hidden; /*Tudo fora da borda fica escondido, nao funcionando*/
+}
+
+#formulario_de_login {
+    display: block;
+    float: left; 
 }
 
 #imagem_de_login {
-    height: 300px;
-    width: 300px;
-
+    display: block;
+    float: right;
+    height: 500px;
+    width: 50%;
 }
 
 @media screen and (min-width: 768px) {
@@ -381,3 +388,4 @@ div#inicial  > figure {
         display: inline-block;
     }
 }
+
