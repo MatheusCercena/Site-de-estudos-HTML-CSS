@@ -60,7 +60,7 @@ h1 {
  }
  
  /* Celulares em paisagem e telas FullHD */
- @media only screen and (min-width: 1920) {
+ @media only screen and (min-width: 1920px) {
 
  }
  
