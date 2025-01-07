@@ -7,7 +7,7 @@
     <title>Listas e imagens </title>
     <link rel="stylesheet" href="style.css" media="screen">
     <link rel="stylesheet" href="impressora.css" media="print">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <style id="cor-padrão-de-marcação">
         mark {
             background-color: lime;
@@ -970,7 +970,8 @@
             <h1 id="18.0">18.0 Menu responsivo</h1>
             <h2 id="18.1">18.1 Como fazer menus</h2>
                 <p>Para fazer menus, usar a tag menu. </p>
-                <p>Buscar icones no site materials.io, do google e então adicionar no inicio do html o link ref que leva a fonte, depois, colocar a tag span seguida da identificação do icone que quer e colar onde quiser no codigo html do site.
+                <p>Buscar icones no site materials.io, do google e então adicionar no inicio do html o link ref que leva a fonte (por exemplo:     &lt; link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /&gt;
+                    ), depois, colocar a tag span seguida da identificação do icone que quer (por exemplo: &lt; span class="material-symbols-outlined"&gt; vpn_key &lt; /span &gt;) e colar onde quiser no codigo html do site.
                 </p>
             <h2 id="18.2">18.2 Alterar o cursor</h2>
                 <p>Para deixar o cursor em forma de maozinha ao passar o mouse em algo, usar a função :hover do css e o atributo cursor: pointer. </p>
@@ -979,13 +980,16 @@
         <section id="Login">
             <img src="imagens/fundo-madeira.jpg" alt="aviso de login" id="imagem_de_login">
             <form action="cadastro.php" id="formulario_de_login">
+                <h1 id="titulo_login">Faça seu login</h1>
                 <p>
-                    <label for="LoginUsername">Seu nome de usuário:</label>
+                    <span class="material-symbols-outlined">person</span>
                     <input type="text" placeholder="Nome de usuário"></input> <br>
+                    <label for="LoginUsername">Seu nome de usuário:</label>
                 </p>
                 <p>
-                    <label for="LoginPassword">Sua senha:</label>
+                    <span class="material-symbols-outlined">vpn_key</span>
                     <input type="text" placeholder="Senha"></input>
+                    <label for="LoginPassword">Sua senha:</label>
                 </p>
             </form>
         </section>
