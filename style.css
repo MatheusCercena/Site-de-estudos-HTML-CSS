@@ -392,6 +392,25 @@ div#inicial  > figure {
     width: 50%;
 }
 
+form.campo {
+    background-color: blueviolet;
+    border-radius: 8px;
+    
+
+}
+
+#itestesenha {
+    width: calc(100% - 200px);
+    border-radius: 8px;
+    margin: 5px 5px 0px 5px;
+}
+
+#itesteemail {
+    width: calc(100% - 200px);
+    border-radius: 8px;
+    margin: 0px 5px 5px 5px;
+}
+
 @media screen and (max-width: 767px) {
     #Login {
         min-height: 500px;

@@ -993,6 +993,39 @@
                 </p>
             </form>
         </section>
+        <section>
+            <h1>Calculos em CSS</h1>
+            <p>Ao inserir o valor da propriedade, colocar o comando calc(x - x). Por exemplo, largura de 100% -40px</p>
+                <pre>
+elemento {
+    width: calc(100% - 40px);
+    }
+                </pre>
+                <p>Detalhe: é muito importante usar espaços antes e depois dos sinais matemáticos, se não, não funciona.</p>
+        </section>
+        <section>
+            <h1>Ajustar posição de elementos</h1>
+            <p>Usar o comando transforme e selecionar a propriedade translate para inserir o valor, selecionando quais eixos quer mover:
+                <pre>
+elemento {
+    transform: translateY(-10px);
+    }
+                </pre>
+            </p>
+        </section>
+        <section>
+            <h1>Teste</h1>
+            <form action="cadastro.php" class="campo">
+                <p>
+                    <label for="itesteemail">Seu email</label>
+                    <input type="email" name="testeemail" id="itesteemail"></input>
+                </p>
+                <p>
+                    <label for="itestesenha">Sua senha</label>
+                    <input type="password" name="testesenha" id="itestesenha">
+                </p>
+            </form>
+        </section>
     </main>
     <footer>
         Site criado por <a href="https://youtube.com/@Certheus" target="_blank">Matheus Cercena do Nascimento.</a> em 2024.
