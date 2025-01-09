@@ -3,6 +3,7 @@
 div.container {
     background-color: aqua;
     display: flex;
+    flex-flow: row wrap; /**Igual a flex-direction: row; + flex-wrap: wrap;*/ 
 }
 
 div.item {

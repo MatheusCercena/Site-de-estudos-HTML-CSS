@@ -1029,7 +1029,59 @@ elemento {
         <section>
             <h1>Flexbox</h1>
             <p>Flexboxes tem uma uma hierarquia com o container (chamado de pai) e com itens dentro desse container.</p>
-            <p>Continuar</p> 
+            <p>Para usar o Flexbox: 
+                <ol type="1">
+                    <li>Classificar as tags de Div que serão usadas na flexbox com uma classe</li>
+                    <li>Identificar no CSS a classe da div pai(container) e atributar com display="flex"</li>
+                    <li>Na classe da div item, atributar com flex="auto"</li>
+                </ol>
+            </p> 
+            <h2>Flex-direction</h2>
+                <p>
+                   <ol>
+                        <li>Row (linha): da esquerda para direita (ou direita para esquerda nos idiomas correspondentes, como japonês e árabe).</li>
+                        <li>Row-reverse: da esquerda para direita</li>
+                        <li>Column (coluna): de cima para baixo</li>
+                        <li>Column-reverse: de baixo para cima </li>
+                   </ol>
+                </p>
+            <h2>Eixos/axis</h2>
+                <p> Os eixos ficam bem no meio do container das flexboxes.
+                    <ol>
+                        <li>Main-axis (eixo x): padrão para row é da esquerda para direita.</li>
+                            <ul>
+                                <li>Main-start e main-end</li>
+                            </ul>
+                        <li>Cross-axis (eixo-y): padrão para column é de cima para baixo.</li>
+                            <ul>
+                                <li>Cross-start e cross-end</li>
+                            </ul>
+                    </ol>
+                </p>
+                <h2>Flex-wrap</h2>
+                    <p>Trata-se da forma como os items se comportam após diminuir o container.
+                        <ul>
+                            <li>No-wrap: items são comprimidos até o limite, depois de atingir o limite, eles quebram</li>
+                            <li>wrap: quebra o ultimo elemento no sentido do cross-axis.</li>
+                            <li>wrap-reverse: quebra o ultimo elemento no sentido contrário do cross-axis.</li>
+                        </ul>
+                    </p>
+                <h2>Short-hand: flex-flow</h2>
+                    <p>Propriedade que permite unir em 1 linha o flex-direction com o flex-wrap:</p>
+                        <pre>
+div.container {
+   display: flex;
+   flex-flow: row wrap;
+}
+                        </pre>
+                        <p>Usar flex-flow é recomendação da W3C (world-wide-web consortium).</p>
+                <h2>Alinhamento dos eixos: </h2>
+                        <p>Justify-content: </p>
+                <h2>Padrões</h2>
+                    <ul>
+                        <li>Flex-direction: row;</li>
+                        <li>Flex-wrap: nowrap;</li>
+                    </ul>
         </section>
     </main>
     <footer>
