@@ -395,8 +395,10 @@ div#inicial  > figure {
 form.campo {
     background-color: blueviolet;
     border-radius: 8px;
-    
+}
 
+form.campo > input:focus-within { /*Não funcionando*/
+    background-color: violet;
 }
 
 #itestesenha {
@@ -410,6 +412,8 @@ form.campo {
     border-radius: 8px;
     margin: 0px 5px 5px 5px;
 }
+
+
 
 @media screen and (max-width: 767px) {
     #Login {
