@@ -1076,11 +1076,33 @@ div.container {
                         </pre>
                         <p>Usar flex-flow é recomendação da W3C (world-wide-web consortium).</p>
                 <h2>Alinhamento dos eixos: </h2>
-                        <p>Justify-content: </p>
+                    <h3>Alinhamento eixo horizontal</h3>
+                        <p>Justify-content</p>
+                            <ul>
+                                <li>flex-start: primeiro elemento no main-start, sem espaço entre elementos e espaço em branco após todos os elementos;</li>
+                                <li>flex-end: primeiro elemento no main-end, sem espaço entre elementos e espaço em branco antes todos os elementos;</li>
+                                <li>center: elementos centralizados, sem espaço entre elementos e espaço em branco no main-start e main-end;</li>
+                                <li>space-between: primeiro e ultimo elemento fixados nas extremidades (main-start e main-end) e demais elementos centralizados com espaçamento igual entre eles;</li>
+                                <li>space-evenly: elementos centralizados com espaços iguais entre eles e nas extremidades;</li>
+                                <li>space-around: todos os elementos com um espaço igual no começo e fim de cada elemento, de forma que as extremidades ficam com um espaçamento igual a metade do espaçamento entre elementos.</li>
+                            </ul>
+                            <p>Para entender melhor, veja a imagem abaixo:</p>
+                            <a href="imagens/justify-content flexible boxes.png" target="_blank"><img src="imagens/justify-content flexible boxes.png"></a>
+                            <p>Importante: o justify-content conflita com o "flex:auto;", se atributado aos itens do contâiner.</p>
+                    <h3>Alinhamento eixo transversal (vertical/cross-axis)</h3>    
+                        <p>align-itens</p>
+                            <ul>
+                                <li>flex-start e flex end: funcionamento similiar ao que acontece no justify-content</li>
+                                <li>stretch: estica os elementos para colarem no cross-start e no cross-end<li>
+                                <li>center: centraliza verticalmente</li>
+                            </ul>
+                        <p>O align itens não possui atributos que permitam espaçamento entre itens que funcionem de forma similar ao space-between, space-evenly e space-around. Porém existe outro atributo que faz isso no cross-axis.</p>
                 <h2>Padrões</h2>
                     <ul>
                         <li>Flex-direction: row;</li>
                         <li>Flex-wrap: nowrap;</li>
+                        <li>justify-content: flex-start;</li>
+                        <li>align-itens: stretch</li>
                     </ul>
         </section>
     </main>

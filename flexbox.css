@@ -4,11 +4,14 @@ div.container {
     background-color: aqua;
     display: flex;
     flex-flow: row wrap; /**Igual a flex-direction: row; + flex-wrap: wrap;*/ 
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    
 }
 
 div.item {
     background-color: salmon;
     border: 1px solid black;
-    text-align: center;
-    flex: auto;
+    text-align: center; 
 }
