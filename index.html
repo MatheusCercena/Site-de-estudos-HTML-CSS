@@ -59,6 +59,7 @@
                         <li><a href="#1.8">1.8 Citações de código</a></li>
                         <li><a href="#1.9">1.9 Criar abreviações</a></li>
                         <li><a href="#1.10">1.10 Colocar espaços em branco antes dos parágrafos</a></li>
+                        <li><a href="#1.11">1.11 Inserir frações</a></li>
                     </ul>
                 <li><a href="#2.0">2.0 Tags texto e edição de texto</a></li>
                     <ul>
@@ -178,54 +179,62 @@
         <section><!--1.0 Formatação de texto-->
             <h1 id="1.0">1.0 Tags de Formatação</h1>
                 <h2 id="1.1">1.1 Marcadores de texto</h2>
-                <p>Use &lt;mark style="background-color: xxx&gt;" (texto) &lt;/mark&gt; para marcar textos em uma <mark style="background-color: red;">cor não padrão</mark>.</p>
-                <p>Use &lt;mark&gt; para marcar textos em na <mark> na cor padrão</mark>, que é amarelo, mas nesse caso foi definida como verde em &lt;head&gt;(<a href="#cor-padrão-de-marcação">veja</a>)</p> <!--Essa por padrão sai verde, como definido em head-->
+                    <p>Use &lt;mark style="background-color: xxx&gt;" (texto) &lt;/mark&gt; para marcar textos em uma <mark style="background-color: red;">cor não padrão</mark>.</p>
+                    <p>Use &lt;mark&gt; para marcar textos em na <mark> na cor padrão</mark>, que é amarelo, mas nesse caso foi definida como verde em &lt;head&gt;(<a href="#cor-padrão-de-marcação">veja</a>)</p> <!--Essa por padrão sai verde, como definido em head-->
                 <h2 id="1.2">1.2 Letras pequenas</h2>
-                <p>Texto <small>pequeno</small></p>
+                    <p>Texto <small>pequeno</small></p>
                 <h2 id="1.3">1.3 Texto deletado (tachado)</h2>
-                <p>Texto <del>deletado</del></p> <!--substitui o <s>-->
-                <p>Textp <s>deletado</s></p>
+                    <p>Texto <del>deletado</del></p> <!--substitui o <s>-->
+                    <p>Textp <s>deletado</s></p>
                 <h2 id="1.4">1.4 Texto inserido (sublinhado)</h2>
-                <p>Texto <ins>inserido</ins></p> <!--substitui o <u>-->
-                <p>Texto <u>inserido</u></p>
+                    <p>Texto <ins>inserido</ins></p> <!--substitui o <u>-->
+                    <p>Texto <u>inserido</u></p>
                 <h2 id="1.5">1.5 Texto sobrescrito e subscrito</h2>
-                <p>Texto <sup>sobrescrito</sup> como em x<sup>-20</sup>=10</p>
-                <p>Texto <sub>subscrito</sub> como em h<sub>2</sub>0</p>
+                    <p>Texto <sup>sobrescrito</sup> como em x<sup>-20</sup>=10</p>
+                    <p>Texto <sub>subscrito</sub> como em h<sub>2</sub>0</p>
                 <h2 id="1.6">1.6 Citações</h2>
-                <p>Para colocar aspas, usar &lt;q&gt;<br>Por exemplo: <q>O computador é um burro muito rápido.</q> </p> <!--usar <q> permite que a citação seja interpreta como tal, não apenas um estilo visual-->
+                    <p>Para colocar aspas, usar &lt;q&gt;<br>Por exemplo: <q>O computador é um burro muito rápido.</q> </p> <!--usar <q> permite que a citação seja interpreta como tal, não apenas um estilo visual-->
                 <h2 id="1.7">1.7 Citações em bloco</h2>
-                <p>Para citar no lado, como se tivesse fazendo um TCC (kkkkk) usa-se &lt;blockquote&gt;</p>
-                <blockquote>
-                    Isso é um exemplo de citação.
-                </blockquote>
+                    <p>Para citar no lado, como se tivesse fazendo um TCC (kkkkk) usa-se &lt;blockquote&gt;</p>
+                    <blockquote>
+                        Isso é um exemplo de citação.
+                    </blockquote>
                 <h2 id="1.8">1.8 Citações de código</h2>
-                <p>Aqui haverá um texto.</p>
+                    <p>Aqui haverá um texto.</p>
                 <h2 id="1.9">1.9 Criar abreviações</h2>
-                <p>Para atribuir um significado a uma abreviação de modo que leito possa passar o mouse em cima e ler do que se trata, pode-ser usar &lt;abbr&gt;</p>
-                <p><abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+                    <p>Para atribuir um significado a uma abreviação de modo que leito possa passar o mouse em cima e ler do que se trata, pode-ser usar &lt;abbr&gt;</p>
+                    <p><abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
                 <h2 id="1.10">1.10 Colocar espaços em branco antes dos parágrafos</h2>
-                <p>Use a propriedade "style" dentro de &lt;p&gt;, assim &lt;p style="white-space: pre"&gt;</p>
-                <p style="white-space: pre;"> 
-                    <pre>
+                    <p>Use a propriedade "style" dentro de &lt;p&gt;, assim &lt;p style="white-space: pre"&gt;</p>
+                    <p style="white-space: pre;"> 
+                        <pre>
     Pode ver que esse texto começou depois de um espaço em branco. Como se fosse uma citação kk.
     O único porém, é que quando vc usa esse estilo, fica um espaço em branco com a tecla "space" do teclado, que pode ser selecionada pelo mouse, enquanto que a tag quote (&lt;q&gt;) cria um espaço semântico, que não pode ser selecionado.
-                    </pre>
-                </p>
-                <p>Pode-se usar a tag &lt;pre&gt; para envelopar o texto, então usar as teclas "TAB" ou "SHIFT"+"TAB" para difinir a quantidade de espaços em branco, que será exibida da forma que for escrita.</p>
-                <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+                        </pre>
+                    </p>
+                    <p>Pode-se usar a tag &lt;pre&gt; para envelopar o texto, então usar as teclas "TAB" ou "SHIFT"+"TAB" para difinir a quantidade de espaços em branco, que será exibida da forma que for escrita.</p>
+                    <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+                <h2 id="1.11">1.11 Inserir frações</h2>
+                    <p>Usar a sequinte sequencia de comandos:</p>
+                        <pre>
+                            <code>
+&lt;math&gt;&lt;mfrac&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mn&gt;6&lt;/mn&gt;&lt;/mfrac&gt;&lt;/math&gt;                            
+                            </code>
+                        </pre>
+                    <p>Esse código retorna o valor <math><mfrac><mn>1</mn><mn>6</mn></mfrac></math>.</p>
         </section>
         <section><!--2.0 Texto e edição-->
             <h1 id="2.0">2.0 Tags texto e edição de texto</h1>
                 <h2 id="2.1">2.1 Textos editáveis, correção ortográfica</h2>
-                <p>Você pode criar textos editáveis pelo usuário usando o atributo "contenteditable" dentro da tag &lt;p&gt;. <br> Pode-se adiconar o atributo "spellcheck='true'" para que o conteúdo digitado possa ser checado por correção ortográfica. Note que, todo texto por padrão tem correção automática. Se não deseja que o texto seja corrigido, é necessário usar o valor "false" no atributo "contenteditable" Como nesses exemplo:</p>
-                <p contenteditable spellcheck="false">Este é um exemplo em que o texto editável <b>não é</b> corrigido ortograficamente pelo navegador.</p>
-                <p contenteditable="true" spellcheck="true">Este é um exemplo em que o texto editável <b>é</b> corrigido ortograficamente pelo navegador.</p>
+                    <p>Você pode criar textos editáveis pelo usuário usando o atributo "contenteditable" dentro da tag &lt;p&gt;. <br> Pode-se adiconar o atributo "spellcheck='true'" para que o conteúdo digitado possa ser checado por correção ortográfica. Note que, todo texto por padrão tem correção automática. Se não deseja que o texto seja corrigido, é necessário usar o valor "false" no atributo "contenteditable" Como nesses exemplo:</p>
+                    <p contenteditable spellcheck="false">Este é um exemplo em que o texto editável <b>não é</b> corrigido ortograficamente pelo navegador.</p>
+                    <p contenteditable="true" spellcheck="true">Este é um exemplo em que o texto editável <b>é</b> corrigido ortograficamente pelo navegador.</p>
                 <h2 id="2.2">2.2 Itens arrastável e não arrastáveis</h2>
-                <p draggable="true">Este é um exemplo de um parágrafo arrastável.</p>
-                <p>Note que para o texto arrastável ser utilizado ele precisa ser relacionado a um evento em JavasCript.</p>
-                <p>Se o texto não tiver essa condição, se atribui o que é característico por padrão do navegador, como textos selecionados, links e imagens. Dessa forma, não é necessário colocar o atributo "draggable" nesses casos. No entanto, caso se deseje que esses elementos sejam desabilitados, pode-se usar o valor "false".</p>
+                    <p draggable="true">Este é um exemplo de um parágrafo arrastável.</p>
+                    <p>Note que para o texto arrastável ser utilizado ele precisa ser relacionado a um evento em JavasCript.</p>
+                    <p>Se o texto não tiver essa condição, se atribui o que é característico por padrão do navegador, como textos selecionados, links e imagens. Dessa forma, não é necessário colocar o atributo "draggable" nesses casos. No entanto, caso se deseje que esses elementos sejam desabilitados, pode-se usar o valor "false".</p>
                 <h2 id="2.3">2.3 Caixas de texto</h2>
-                <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+                    <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
         </section>
         <section><!--3.0 Listas-->
             <H1 id="3.0">3.0 Criando Listas</H1>
@@ -261,15 +270,15 @@
                     </ol>
                 </ol>
                 <h2 id="3.3">3.3 Com listas de definição</h2>
-                <p>Mecanismos de busca, quando se pesquisa um termo, dão prioridade para sites que utlizam &lt;dl&gt;</p>
-                <dl>
-                    <dt>HTML</dt> <!--Definition term-->
-                    <dd>Linguagem de marcação para criação de conteúdo em um site</dd> <!--Definition definition kkk-->
-                    <dt>CSS</dt>
-                    <dd>Linguagem de marcação para criação de design em um site</dd>
-                </dl>
-                <p>Ou seja, a ordem de uso é : dl, dt e dd</p>
-                <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+                    <p>Mecanismos de busca, quando se pesquisa um termo, dão prioridade para sites que utlizam &lt;dl&gt;</p>
+                    <dl>
+                        <dt>HTML</dt> <!--Definition term-->
+                        <dd>Linguagem de marcação para criação de conteúdo em um site</dd> <!--Definition definition kkk-->
+                        <dt>CSS</dt>
+                        <dd>Linguagem de marcação para criação de design em um site</dd>
+                    </dl>
+                    <p>Ou seja, a ordem de uso é : dl, dt e dd</p>
+                    <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
             <h1>Outras listas kk</h1>
                 <ol>
                     <li>Ordened list</li>
@@ -320,154 +329,154 @@
                 </ul>
         </section>
         <section><!--4.0 Links-->
-            <H1 id="4.0">4.0 Links externos(Hypertexto)</H1>
+            <h1 id="4.0">4.0 Links externos(Hypertexto)</h1>
                 <h2 id="4.1">4.1 TAG &lt;a href&gt;</h2>
                 <ol>Mecanismos de pesquisa mais usados:
                     <li><a href="https://google.com" target="_blank" rel="externos">Google</a></li>
                     <li><a href="https://bing.com" target="_blank" rel="externos">Bing</a></li>
                 </ol>
-                <p>Interpreta-se:
-                    <dl>
-                        <dt>href</dt>
-                        <dd>referencia</dd>
-                        <dt>target</dt>
-                        <dd>pagina em branco</dd>
-                        <dt>rel</dt>
-                        <dd>indica a relação semantica (link externo)</dd>
-                    </dl>
-                </p>
-                <p><a href="pagina 2.html" rel="next">Ir para próxima página</a></p>
+                    <p>Interpreta-se:
+                        <dl>
+                            <dt>href</dt>
+                            <dd>referencia</dd>
+                            <dt>target</dt>
+                            <dd>pagina em branco</dd>
+                            <dt>rel</dt>
+                            <dd>indica a relação semantica (link externo)</dd>
+                        </dl>
+                    </p>
+                    <p><a href="pagina 2.html" rel="next">Ir para próxima página</a></p>
                 <h2 id="4.2">4.2 Links "no follow"</h2>
-                <p>Tratam-se de links dos quais não se quer que o mecanismo de pesquisa adentre, pois não se tem relação com o site de forma direta</p>
-                <p>Por exemplo: <br><a href="https://youtube.com/RodrigoBaltar" target="_blank" rel="nofollow">Patrocinador</a></p>
+                    <p>Tratam-se de links dos quais não se quer que o mecanismo de pesquisa adentre, pois não se tem relação com o site de forma direta</p>
+                    <p>Por exemplo: <br><a href="https://youtube.com/RodrigoBaltar" target="_blank" rel="nofollow">Patrocinador</a></p>
                 <h2 id="4.3">4.3 Links de pastas internas</h2>
-                <p>Deve-se indicar o caminho correto, indicando as pastas seguintes</p>
-                <p>Pasta interna: <a href="imagens/Olha_fotos!.html" target="_self" rel="next">Olha_Fotos!</a></p>
-                <p>No caso de ser uma página anterior, usar "../", para indicar que volta uma pasta (como no linux).</p>
-                <p>Veja esse exemplo: <a href="./imagens/Olha_fotos!.html" target="_self" rel="next">esse</a>.</p>
-                <h1>Links para Downloads</h1>
+                    <p>Deve-se indicar o caminho correto, indicando as pastas seguintes</p>
+                    <p>Pasta interna: <a href="imagens/Olha_fotos!.html" target="_self" rel="next">Olha_Fotos!</a></p>
+                    <p>No caso de ser uma página anterior, usar "../", para indicar que volta uma pasta (como no linux).</p>
+                    <p>Veja esse exemplo: <a href="./imagens/Olha_fotos!.html" target="_self" rel="next">esse</a>.</p>
+            <h1>Links para Downloads</h1>
                 <h2 id="4.4">4.4 Downloads de PDF</h2>
-                <ul>
-                    <p>Aulas 1-10:</p>
-                    <li><a href="Aulas em PDF/01 - História da Internet.pdf" download="Aula 01 - História da Intenet" target="_blank">Aula 1</a></li>
-                    <li><a href="Aulas em PDF/02 - Como funciona a Internet.pdf" download="Aula 02 - Como funciona a Internet" target="_blank">Aula 2</a></li>
-                    <li><a href="Aulas em PDF/03 - Como funciona HTML e CSS.pdf" download="Aula 03 - Como funciona HTML e CSS" target="_blank">Aula 3</a></li>
-                    <li><a href="Aulas em PDF/04 - Primeiros passos HTML.pdf" download="Aula 04 - Primeiros passos HTML" target="_blank">Aula 4</a></li>
-                    <li><a href="Aulas em PDF/05 - Caracteres, parágrafos e quebras de linha.pdf" download="Aula 05 - Caracteres, parágrafos e quebras de linha" target="_blank">Aula 5</a></li>
-                    <li><a href="Aulas em PDF/06 - Imagens e Favicon.pdf" download="Aula 06 - Imagens e Favicon" target="_blank">Aula 6</a></li>
-                    <li><a href="Aulas em PDF/07 - Hierarquia de títulos.pdf" download="Aula 07 - Hierarquia de títulos" target="_blank">Aula 7</a></li>
-                    <li><a href="Aulas em PDF/08 - Formatação de Textos.pdf" download="Aula 08 - Formatação de Textos" target="_blank">Aula 8</a></li>
-                    <li><a href="Aulas em PDF/09 - Listas HTML.pdf" download="Aula 09 - Listas HTML" target="_blank">Aula 9</a></li>
-                    <li><a href="Aulas em PDF/10 - Ligações em toda parte.pdf" download="Aula 10 - Ligações em toda parte" target="_blank">Aula 10</a></li>
-                </ul>
-                <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+                    <ul>
+                        <p>Aulas 1-10:</p>
+                        <li><a href="Aulas em PDF/01 - História da Internet.pdf" download="Aula 01 - História da Intenet" target="_blank">Aula 1</a></li>
+                        <li><a href="Aulas em PDF/02 - Como funciona a Internet.pdf" download="Aula 02 - Como funciona a Internet" target="_blank">Aula 2</a></li>
+                        <li><a href="Aulas em PDF/03 - Como funciona HTML e CSS.pdf" download="Aula 03 - Como funciona HTML e CSS" target="_blank">Aula 3</a></li>
+                        <li><a href="Aulas em PDF/04 - Primeiros passos HTML.pdf" download="Aula 04 - Primeiros passos HTML" target="_blank">Aula 4</a></li>
+                        <li><a href="Aulas em PDF/05 - Caracteres, parágrafos e quebras de linha.pdf" download="Aula 05 - Caracteres, parágrafos e quebras de linha" target="_blank">Aula 5</a></li>
+                        <li><a href="Aulas em PDF/06 - Imagens e Favicon.pdf" download="Aula 06 - Imagens e Favicon" target="_blank">Aula 6</a></li>
+                        <li><a href="Aulas em PDF/07 - Hierarquia de títulos.pdf" download="Aula 07 - Hierarquia de títulos" target="_blank">Aula 7</a></li>
+                        <li><a href="Aulas em PDF/08 - Formatação de Textos.pdf" download="Aula 08 - Formatação de Textos" target="_blank">Aula 8</a></li>
+                        <li><a href="Aulas em PDF/09 - Listas HTML.pdf" download="Aula 09 - Listas HTML" target="_blank">Aula 9</a></li>
+                        <li><a href="Aulas em PDF/10 - Ligações em toda parte.pdf" download="Aula 10 - Ligações em toda parte" target="_blank">Aula 10</a></li>
+                    </ul>
+                    <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
         </section>
         <section><!--5.0 Imagens-->
             <H1 id="5.0">5.0 Imagens Dinâmicas</H1>
                 <h2 id="5.1">5.1 Usando &lt;img&gt;</h2>
-                <p>Usa-se a tag &lt;img&gt; para indicar a fonte e o texto alternativo da imagem (para acessibilidade). É a forma mais simples de adicionar imagens.</p>
-                <img src="imagens/Paisagem_da_Caatinga_Paraibana-640.JPG" alt="Caatinga">
+                    <p>Usa-se a tag &lt;img&gt; para indicar a fonte e o texto alternativo da imagem (para acessibilidade). É a forma mais simples de adicionar imagens.</p>
+                    <img src="imagens/Paisagem_da_Caatinga_Paraibana-640.JPG" alt="Caatinga">
                 <h2 id="5.2">5.2 Usando &lt;fig&gt; + &lt;img&gt;</h2>
-                <p>A tag &lt;fig&gt; permite colocar legendas na imagem presente na tag &lt;img&gt;, como nesse exemplo</p>
+                    <p>A tag &lt;fig&gt; permite colocar legendas na imagem presente na tag &lt;img&gt;, como nesse exemplo</p>
                 <figure>
                     <img src="imagens/Paisagem_da_Caatinga_Paraibana-640.JPG" alt="Caatinga">
                     <figcaption>Paisagem da Caatinga Paraibana</figcaption>
                 </figure>
                 <h2 id="5.3">5.3 Usando &lt;picture&gt; + &lt;img&gt;</h2>
-                <p>Permite o uso de imagens de diversas resoluções diferentes, para tornar o site otimizado e dinâmico. </p>
-                <p>Usa-se a tag &lt;pic&gt; para envelopar as tags &lt;img&gt; e &lt;source media&gt; em que:</p>
-                    <dl>
-                        <dt>picture</dt>
-                        <dd>indica que o que estará envelopado é uma imagem.</dd>
-                        <dt>img src</dt>
-                        <dd>É a imagem original a ser mostrada para sites em janelas grandes.</dd>
-                        <dt>source media</dt>
-                        <dd>Deve vir acima de "img src" e conter a próxima menor imagem, diminuindo gradativamente.</dd>
-                    </dl>
-                </p>
-                <pre>
-                    <code>
+                    <p>Permite o uso de imagens de diversas resoluções diferentes, para tornar o site otimizado e dinâmico. </p>
+                    <p>Usa-se a tag &lt;pic&gt; para envelopar as tags &lt;img&gt; e &lt;source media&gt; em que:</p>
+                        <dl>
+                            <dt>picture</dt>
+                            <dd>indica que o que estará envelopado é uma imagem.</dd>
+                            <dt>img src</dt>
+                            <dd>É a imagem original a ser mostrada para sites em janelas grandes.</dd>
+                            <dt>source media</dt>
+                            <dd>Deve vir acima de "img src" e conter a próxima menor imagem, diminuindo gradativamente.</dd>
+                        </dl>
+                    </p>
+                    <pre>
+                        <code>
 &lt;source media="(max-width: 1230px)" srcset="imagens/Paisagem_da_Caatinga_Paraibana-640.JPG" type="image/JPG"&gt;
 &lt;source media="(max-width: 1919px)" srcset="imagens/Paisagem_da_Caatinga_Paraibana-1280.JPG" type="image/JPG"&gt;
 &lt;img src="imagens/Paisagem_da_Caatinga_Paraibana-1920.JPG" alt="Imagem Flexível"&gt;
-                    </code>
-                </pre>
-                <p>Deve-se remover 1 pixel em "max-width", de forma que se a tela é 1920p, assim que o tamanho dela for diminuído irá carregar a imagem imediatamente menor.</p>
-                <p>Tente abrir essa imagem em janelas de tamanhos diferentes no navegador. <br>Dica: o atalho do <code>windows+shift+m</code> aciona uma ferramenta do App <i>Power Toys</i> chamada "Screen Ruller", que permite medir o tamanho da tela, o que é util para testar o tamanho de tela em navegadores e ver como as imagens correspondem.</p>
-                <picture>
-                    <source media="(max-width: 1330px)" srcset="imagens/Paisagem_da_Caatinga_Paraibana-640.JPG" type="image/JPG">
-                    <source media="(max-width: 1919px)" srcset="imagens/Paisagem_da_Caatinga_Paraibana-1280.JPG" type="image/JPG">
-                    <img src="imagens/Paisagem_da_Caatinga_Paraibana-1920.JPG" alt="Imagem Flexível">
-                </picture>
+                        </code>
+                    </pre>
+                    <p>Deve-se remover 1 pixel em "max-width", de forma que se a tela é 1920p, assim que o tamanho dela for diminuído irá carregar a imagem imediatamente menor.</p>
+                    <p>Tente abrir essa imagem em janelas de tamanhos diferentes no navegador. <br>Dica: o atalho do <code>windows+shift+m</code> aciona uma ferramenta do App <i>Power Toys</i> chamada "Screen Ruller", que permite medir o tamanho da tela, o que é util para testar o tamanho de tela em navegadores e ver como as imagens correspondem.</p>
+                    <picture>
+                        <source media="(max-width: 1330px)" srcset="imagens/Paisagem_da_Caatinga_Paraibana-640.JPG" type="image/JPG">
+                        <source media="(max-width: 1919px)" srcset="imagens/Paisagem_da_Caatinga_Paraibana-1280.JPG" type="image/JPG">
+                        <img src="imagens/Paisagem_da_Caatinga_Paraibana-1920.JPG" alt="Imagem Flexível">
+                    </picture>
                 <h2 id="5.4">5.4 Imagens Clicáveis</h2>
-                <p>Para fazer imagens levarem a links elas devem ser envelopadas na tag &lt;a&gt;, veja:</p>
-                <a href="imagens/Paisagem_da_Caatinga_Paraibana-full.JPG" target="_blank"><img src="imagens/Paisagem_da_Caatinga_Paraibana-640.JPG" alt="Imagem clicável da caatinga paraibana"></a>
-                <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+                    <p>Para fazer imagens levarem a links elas devem ser envelopadas na tag &lt;a&gt;, veja:</p>
+                    <a href="imagens/Paisagem_da_Caatinga_Paraibana-full.JPG" target="_blank"><img src="imagens/Paisagem_da_Caatinga_Paraibana-640.JPG" alt="Imagem clicável da caatinga paraibana"></a>
+                    <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
                 <h2 id="5.5">5.5 Imagens com donwload (não funcionando)</h2>
-                <picture>
-                    <a href="imagens/Sem título.jpg" target="_blank"><img src="imagens/Sem título.jpg" alt="Cores"></a>
-                    <p>Clique <a href="imagens/Sem título.jpg" download="Cores" target="_blank">aqui</a> para fazer o download (ou clique na imagem)</p>
-                </picture>  
+                    <picture>
+                        <a href="imagens/Sem título.jpg" target="_blank"><img src="imagens/Sem título.jpg" alt="Cores"></a>
+                        <p>Clique <a href="imagens/Sem título.jpg" download="Cores" target="_blank">aqui</a> para fazer o download (ou clique na imagem)</p>
+                    </picture>  
                 <section id="backgroundgimge_text"><!--Background Images-->
                     <h2 id="5.6">5.6 Este é um lorem para fazermos um paragrafo com background image</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, magni explicabo reiciendis odio, doloribus at repellat accusantium adipisci magnam rerum molestiae in tenetur, impedit rem hic. Id aspernatur possimus iusto?</p> 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, magni explicabo reiciendis odio, doloribus at repellat accusantium adipisci magnam rerum molestiae in tenetur, impedit rem hic. Id aspernatur possimus iusto?</p> 
                 </section>
                 <h2 id="5.7">5.7 Para fazer imagens que ficam fixas</h2>
-                <p>Para fazer imagens ficarem fixas em algum ponto da tela, se usa a tag float, desde que os elementos sejam um bloco.</p>
-                <p>Ver seção <a href="#Login">Login</a></p>
+                    <p>Para fazer imagens ficarem fixas em algum ponto da tela, se usa a tag float, desde que os elementos sejam um bloco.</p>
+                    <p>Ver seção <a href="#Login">Login</a></p>
         </section>
         <section><!--6.0 Audio-->
             <H1 id="6.0">6.0 Adicionando audios</H1>
                 <h2 id="6.1">6.1 Padrão</h2>
-                <p>Usa se a TAG &lt;audio&gt;. Deve, minimamente, ser adicionados o atributo "controls" e outros atributos úteis são: "loop" e "autoplay"</p>
+                    <p>Usa se a TAG &lt;audio&gt;. Deve, minimamente, ser adicionados o atributo "controls" e outros atributos úteis são: "loop" e "autoplay"</p>
                 <h2 id="6.2">6.2 Exemplos</h2>
-                <p>Essa é a música tema do site: Still Dre Instrumental Version</p>
-                <p><audio src="audios/Still D.R.E. (Instrumental).mp3" controls loop></audio></p>
-                <p>Ouça no <a href="https://www.youtube.com/watch?v=3MufzuaKfZg" target="_blank">Youtube</a>.</p>
-                <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
-                <p>Escuta só, "Still Dre"(Instrumental version):</p>
-                <audio src="audios/Still D.R.E. (Instrumental).mp3" controls class="externo"></audio>
-                <p>Para testar comandos que podem ser utilizados dentro da tag de audio, acesse <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank" class="externo" nofollow>esse</a> link.</p>
+                    <p>Essa é a música tema do site: Still Dre Instrumental Version</p>
+                    <p><audio src="audios/Still D.R.E. (Instrumental).mp3" controls loop></audio></p>
+                    <p>Ouça no <a href="https://www.youtube.com/watch?v=3MufzuaKfZg" target="_blank">Youtube</a>.</p>
+                    <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+                    <p>Escuta só, "Still Dre"(Instrumental version):</p>
+                    <audio src="audios/Still D.R.E. (Instrumental).mp3" controls class="externo"></audio>
+                    <p>Para testar comandos que podem ser utilizados dentro da tag de audio, acesse <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank" class="externo" nofollow>esse</a> link.</p>
         </section>
         <section><!--7.0 Blocos-->
             <h1 id="7.0">7.0 Separar o conteúdo em blocos</h1>
                 <h2 id="7.1">7.1 Usando a TAG &lt;div&gt;</h2>
-                <p>É uma tag não semântica, e serve apenas para organizar o conteúdo.</p>
+                    <p>É uma tag não semântica, e serve apenas para organizar o conteúdo.</p>
                 <h2 id="7.2">7.2 Usando a TAG &lt;nav&gt;</h2>
-                <p>É uma tag semântica e identifica o bloco como reponsável pela navegação dentro do site.</p>
+                    <p>É uma tag semântica e identifica o bloco como reponsável pela navegação dentro do site.</p>
                 <h2 id="7.3">7.3 Usando a TAG &lt;section&gt;</h2>
-                <p>É uma tag semântica e identifica o bloco como uma seção temática de conteúdo</p>
+                    <p>É uma tag semântica e identifica o bloco como uma seção temática de conteúdo</p>
                 <h2 id="7.4">7.4 Por que não apenas um?</h2>
-                <p>Deve-se escolher corretamente entre as 3 tags para melhorar o entendimento da estrutura e conteúdo do site pelos mecanismos de pesquisa e plugins, assim como pelo programador.</p>
-                <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+                    <p>Deve-se escolher corretamente entre as 3 tags para melhorar o entendimento da estrutura e conteúdo do site pelos mecanismos de pesquisa e plugins, assim como pelo programador.</p>
+                    <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
         </section>
         <section><!--8.0 Rodapés-->
             <h1 id="8.0">8.0 Rodapés</h1>
                 <h2 id="8.1">8.1 O que é e como usar</h2>
-                <p>Footer são tags semânticas que indicam rodapés para seus ancetrais mais próximos dentro do código, ou seja, pro elemento imediatamente superior as tags de footer.</p>
+                    <p>Footer são tags semânticas que indicam rodapés para seus ancetrais mais próximos dentro do código, ou seja, pro elemento imediatamente superior as tags de footer.</p>
                 <h2 id="8.2">8.2 Exemplo</h2>
-                <h3>Considerações sobre o mim:</h3>
-                <p>Olha como sou belo!</p>
-                <footer>
-                    &copy; Cercena, Matheus. <time datetime="04/11/24">2024</time>.
-                </footer>
-                <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+                    <h3>Considerações sobre o mim:</h3>
+                        <p>Olha como sou belo!</p>
+                        <footer>
+                            &copy; Cercena, Matheus. <time datetime="04/11/24">2024</time>.
+                        </footer>
+                        <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
         </section>
         <section><!--9.0 Vídeos-->
             <h1 id="9.0">9.0 Colocando vídeos</h1>
                 <h2 id="9.1">9.1 Incorporando vídeos do youtube</h2>
-                <p>Basta colar o link:</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VsHUzWy6PpA?si=ijW6voDAJwgB1Eza" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Basta colar o link:</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VsHUzWy6PpA?si=ijW6voDAJwgB1Eza" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <h2 id="9.2">9.2 Colocando de hospedagem própria</h2>
-                <video src="videos/Logitech M650L vs M280 Test Sound.mp4" controls width="560"></video>
-                <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+                    <video src="videos/Logitech M650L vs M280 Test Sound.mp4" controls width="560"></video>
+                    <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
                 <h2>Com hospedagem própria(dentro do próprio site)</h2>
-                <video src="videos/WhatsApp Video 2024-11-04 at 10.55.07_e31f48cd.mp4" type="video/mp4" controls></video>
+                    <video src="videos/WhatsApp Video 2024-11-04 at 10.55.07_e31f48cd.mp4" type="video/mp4" controls></video>
                 <H2>Incorporando de fontes externas</H2>
-                <p>Basta ir no youtube ou sites de hospedagem de video e selecionar "incorporar", depois colar e o site irá colar um código do iframe. Em que pode-se ajustar a largura e allowlist</p>
-                <p>Nesse caso, o site não hospedará o vídeo, apenas o link para o site.</p>
-                <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/VsHUzWy6PpA?si=cKz-fpqX2GLUQRck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+                    <p>Basta ir no youtube ou sites de hospedagem de video e selecionar "incorporar", depois colar e o site irá colar um código do iframe. Em que pode-se ajustar a largura e allowlist</p>
+                    <p>Nesse caso, o site não hospedará o vídeo, apenas o link para o site.</p>
+                    <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/VsHUzWy6PpA?si=cKz-fpqX2GLUQRck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
         </section>
         <section><!--10.0 CSS-->
             <h1 id="10.0">10.0 CSS</h1>
@@ -515,34 +524,46 @@
                         > = children <br>
                         */
                     </p>
-            <span style= "font-family: 'Arial', Helvetica, sans-serif";><!-- Repare no uso da tag span-->
-                <h1 style="color: mediumseagreen; font-size: 2em;">10.9 Teste CSS Inline</h1>
-                    <h2 id="10.10">10.10 Teste CSS Inline</h2>
-                    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo est vitae cupiditate nostrum aspernatur debitis numquam sapiente quam similique temporibus, commodi reprehenderit harum distinctio sit provident, fugiat obcaecati fuga rem!</p>
-            </span>
-            <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+                    <span style= "font-family: 'Arial', Helvetica, sans-serif";><!-- Repare no uso da tag span-->
+                        <h1 style="color: mediumseagreen; font-size: 2em;">10.9 Teste CSS Inline</h1>
+                            <h2 id="10.10">10.10 Teste CSS Inline</h2>
+                            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo est vitae cupiditate nostrum aspernatur debitis numquam sapiente quam similique temporibus, commodi reprehenderit harum distinctio sit provident, fugiat obcaecati fuga rem!</p>
+                    </span>
+                    <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+            <h2>Reset de css</h2>
+                <p>Quando vai se criar um arquivo CSS, é recomendado zerar os paddings, margins e bordas, para que fique mais facil de visualizar o site configurar</p>
+                <p>Para fazer isso, usa-se o seguinte comando em CSS:</p>
+                <pre>
+                    <code>
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+                    </code>
+                </pre>
         </section>
         <section><!--11.0 Classes-->
             <H1 id="11.0">11.0 Classes</H1>
                 <h2 id="11.1">11.1 Pra que servem</h2>
-                <p>Servem pra criar IDs que podem ser aplicados a várias tags.</p>
-                <p>Depois, no CSS, usa-se .nome_da_classe para identificar a classe, seguido das chaves e dos estilos daquela classe.</p>
-                <p>Se quiser separar as classes por tag, se coloca o nome da tag antes do ponto, tipo h2.nome_da_classe</p>
+                    <p>Servem pra criar IDs que podem ser aplicados a várias tags.</p>
+                    <p>Depois, no CSS, usa-se .nome_da_classe para identificar a classe, seguido das chaves e dos estilos daquela classe.</p>
+                    <p>Se quiser separar as classes por tag, se coloca o nome da tag antes do ponto, tipo h2.nome_da_classe</p>
                 <h2 id="11.2">11.2 Hierarquia</h2>
-                <p>Pode-se atribuir mais de uma classe a uma tag, separando por espaços: class="classe1 classe2"</p>
-                <P>Os IDs sobrepõem as classes</P>
-                <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+                    <p>Pode-se atribuir mais de uma classe a uma tag, separando por espaços: class="classe1 classe2"</p>
+                    <P>Os IDs sobrepõem as classes</P>
+                    <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
         </section>
         <section><!--12.0 Hovers-->
             <H1 id="12.0">12.0 Hovers</H1>
                 <h2 id="12.1">12.1 Criar um hover em uma Div</h2>
-                <p>Usar a seguinte estrutura:</p>
-                <p>div: hover</p>
+                    <p>Usar a seguinte estrutura:</p>
+                    <p>div: hover</p>
                 <h2 id="12.2">12.2 Criar um texto oculto</h2>
-                <p>Usar o seguinte código em CSS:</p>
-                <p> No CSS:
-            <pre>
-                <code>
+                    <p>Usar o seguinte código em CSS:</p>
+                    <p> No CSS:
+                <pre>
+                    <code>
         div: hover {
             font-weight: bold;
         }
@@ -552,24 +573,24 @@
         div: hover > p {
             font-style: italic;
                     }
-                </code>
-            </pre>
-                </p>
-                <p>No HTML:</p>
-                        <div class="teste">
-                            Aqui há um Menu
-                            <p>ops, vc me achou...</p>
-                            <p>(hehe, funcionou)</p>
-                        <br>Passe o mouse aqui em cima
-                        </div>
+                    </code>
+                </pre>
+                    </p>
+                    <p>No HTML:</p>
+                            <div class="teste">
+                                Aqui há um Menu
+                                <p>ops, vc me achou...</p>
+                                <p>(hehe, funcionou)</p>
+                            <br>Passe o mouse aqui em cima
+                            </div>
                 <h2 id="10.3">12.3 Criando links com hovers</h2>
-                <p>
-                    <ul>
-                        <li><a href="https://youtube.com/@Certheus" target="_blank">Certheus no youtube</a></li>
-                        <li><a href="https://youtube.com/@RodrigoBaltar" target="_blank">Rodrigo Baltar no youtube</a></li>
-                    </ul>
-                </p>
-                <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+                    <p>
+                        <ul>
+                            <li><a href="https://youtube.com/@Certheus" target="_blank">Certheus no youtube</a></li>
+                            <li><a href="https://youtube.com/@RodrigoBaltar" target="_blank">Rodrigo Baltar no youtube</a></li>
+                        </ul>
+                    </p>
+                    <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
         </section>  
         <section><!--13.0 Caixas-->
             <h1 id="13.0">13.0 Caixas</h1>
@@ -585,20 +606,20 @@
                     </ul>
                 <h2 id="13.2">13.2 Tipos de caixa</h2>
                     <h3 id="13.2.1">13.2.1 Box-level</h3>
-                    <p>São as tagas que quebram linhas, como: </p>
-                    <ul>
-                        <li>Div</li>
-                        <li>h1-h6</li>
-                        <li>p</li>
-                        <li>main</li>
-                        <li>header</li>
-                        <li>nav</li>
-                        <li>article</li>
-                        <li>aside</li>
-                        <li>footer</li>
-                        <li>form</li>
-                        <li>video</li>
-                    </ul>
+                        <p>São as tagas que quebram linhas, como: </p>
+                        <ul>
+                            <li>Div</li>
+                            <li>h1-h6</li>
+                            <li>p</li>
+                            <li>main</li>
+                            <li>header</li>
+                            <li>nav</li>
+                            <li>article</li>
+                            <li>aside</li>
+                            <li>footer</li>
+                            <li>form</li>
+                            <li>video</li>
+                        </ul>
                     <h3 id="13.2.2"> 13.2.2 Inline-level</h3>
                         <p>São as tagas que <b>não</b> quebram linhas, como: </p>
                         <ul>
@@ -687,7 +708,7 @@
                     <p>
                         Usar a TAG &lt;colspan&gt; para celulas horizontais e &lt;rowspan&gt; para celulas verticais.. 
                     </p>
-                    <h2>Significado semântico de colunas e linhas</h2>
+                <h2>Significado semântico de colunas e linhas</h2>
                     <p>Usar a tag &lt;scope&gt;, par identificar o que é, aí usa row ou col</p>
                     <p>Usar rowgroup e colgroup para identificar que o head aplica-se a um grupo de linhas ou colunas, no caso de células mescladas</p>
                     <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
@@ -905,8 +926,8 @@
                 </form>
             </fieldset>
             <h3>Textarea</h3>
-            <p>Para adicionar caixas de textos pode-se usar a tag textarea. Na tag, adicionar os atributos cols e rows para definir o tamanho dela (sempre relativo a quantidade de caracteres, não a espaço ou pixels)</p>
-            <p>Lembrar de adicionar um label e um form para a textarea.</p>
+                <p>Para adicionar caixas de textos pode-se usar a tag textarea. Na tag, adicionar os atributos cols e rows para definir o tamanho dela (sempre relativo a quantidade de caracteres, não a espaço ou pixels)</p>
+                <p>Lembrar de adicionar um label e um form para a textarea.</p>
             <form action="cadastro.php" method="post">
                 <label for="imensagem">Escreva sua mensagem:</label><br>
                 <textarea name="mensagem" id="imensagem" cols="80" rows="10">Escreva sua mensagem...</textarea><br>
@@ -968,142 +989,208 @@
         </section>
         <section><!--18.0 Menus-->
             <h1 id="18.0">18.0 Menu responsivo</h1>
-            <h2 id="18.1">18.1 Como fazer menus</h2>
-                <p>Para fazer menus, usar a tag menu. </p>
-                <p>Buscar icones no site materials.io, do google e então adicionar no inicio do html o link ref que leva a fonte (por exemplo:     &lt; link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /&gt;
-                    ), depois, colocar a tag span seguida da identificação do icone que quer (por exemplo: &lt; span class="material-symbols-outlined"&gt; vpn_key &lt; /span &gt;) e colar onde quiser no codigo html do site.
-                </p>
-            <h2 id="18.2">18.2 Alterar o cursor</h2>
-                <p>Para deixar o cursor em forma de maozinha ao passar o mouse em algo, usar a função :hover do css e o atributo cursor: pointer. </p>
-            <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
+                <h2 id="18.1">18.1 Como fazer menus</h2>
+                    <p>Para fazer menus, usar a tag menu. </p>
+                    <p>Buscar icones no site materials.io, do google e então adicionar no inicio do html o link ref que leva a fonte (por exemplo:     &lt; link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /&gt;
+                        ), depois, colocar a tag span seguida da identificação do icone que quer (por exemplo: &lt; span class="material-symbols-outlined"&gt; vpn_key &lt; /span &gt;) e colar onde quiser no codigo html do site.
+                    </p>
+                <h2 id="18.2">18.2 Alterar o cursor</h2>
+                    <p>Para deixar o cursor em forma de maozinha ao passar o mouse em algo, usar a função :hover do css e o atributo cursor: pointer. </p>
+                    <p><a href="#Sumário">Clique aqui para voltar ao sumário</a></p>
         </section>
         <section id="Login">
             <img src="imagens/fundo-madeira.jpg" alt="aviso de login" id="imagem_de_login">
             <form action="cadastro.php" id="formulario_de_login">
                 <h1 id="titulo_login">Faça seu login</h1>
-                <p>
-                    <span class="material-symbols-outlined">person</span>
-                    <input type="text" placeholder="Nome de usuário"></input> <br>
-                    <label for="LoginUsername">Seu nome de usuário:</label>
-                </p>
-                <p>
-                    <span class="material-symbols-outlined">vpn_key</span>
-                    <input type="text" placeholder="Senha"></input>
-                    <label for="LoginPassword">Sua senha:</label>
-                </p>
+                    <p>
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="text" placeholder="Nome de usuário"></input> <br>
+                        <label for="LoginUsername">Seu nome de usuário:</label>
+                    </p>
+                    <p>
+                        <span class="material-symbols-outlined">vpn_key</span>
+                        <input type="text" placeholder="Senha"></input>
+                        <label for="LoginPassword">Sua senha:</label>
+                    </p>
             </form>
         </section>
         <section>
             <h1>Calculos em CSS</h1>
-            <p>Ao inserir o valor da propriedade, colocar o comando calc(x - x). Por exemplo, largura de 100% -40px</p>
-                <pre>
+                <p>Ao inserir o valor da propriedade, colocar o comando calc(x - x). Por exemplo, largura de 100% -40px</p>
+                    <pre>
 elemento {
     width: calc(100% - 40px);
     }
-                </pre>
-                <p>Detalhe: é muito importante usar espaços antes e depois dos sinais matemáticos, se não, não funciona.</p>
+                    </pre>
+                    <p>Detalhe: é muito importante usar espaços antes e depois dos sinais matemáticos, se não, não funciona.</p>
         </section>
         <section>
             <h1>Ajustar posição de elementos</h1>
-            <p>Usar o comando transforme e selecionar a propriedade translate para inserir o valor, selecionando quais eixos quer mover:
-                <pre>
+                <p>Usar o comando transforme e selecionar a propriedade translate para inserir o valor, selecionando quais eixos quer mover:
+                    <pre>
 elemento {
     transform: translateY(-10px);
     }
-                </pre>
-            </p>
+                    </pre>
+                </p>
         </section>
         <section>
             <h1>Teste</h1>
-            <form action="cadastro.php" class="campo">
-                <p>
-                    <label for="itesteemail">Seu email</label>
-                    <input type="email" name="testeemail" id="itesteemail"></input>
-                </p>
-                <p>
-                    <label for="itestesenha">Sua senha</label>
-                    <input type="password" name="testesenha" id="itestesenha">
-                </p>
-            </form>
+                <form action="cadastro.php" class="campo">
+                    <p>
+                        <label for="itesteemail">Seu email</label>
+                        <input type="email" name="testeemail" id="itesteemail"></input>
+                    </p>
+                    <p>
+                        <label for="itestesenha">Sua senha</label>
+                        <input type="password" name="testesenha" id="itestesenha">
+                    </p>
+                </form>
         </section>
         <section>
             <h1>Flexbox</h1>
-            <p>Flexboxes tem uma uma hierarquia com o container (chamado de pai) e com itens dentro desse container.</p>
-            <p>Para usar o Flexbox: 
-                <ol type="1">
-                    <li>Classificar as tags de Div que serão usadas na flexbox com uma classe</li>
-                    <li>Identificar no CSS a classe da div pai(container) e atributar com display="flex"</li>
-                    <li>Na classe da div item, atributar com flex="auto"</li>
-                </ol>
-            </p> 
-            <h2>Flex-direction</h2>
-                <p>
-                   <ol>
-                        <li>Row (linha): da esquerda para direita (ou direita para esquerda nos idiomas correspondentes, como japonês e árabe).</li>
-                        <li>Row-reverse: da esquerda para direita</li>
-                        <li>Column (coluna): de cima para baixo</li>
-                        <li>Column-reverse: de baixo para cima </li>
-                   </ol>
-                </p>
-            <h2>Eixos/axis</h2>
-                <p> Os eixos ficam bem no meio do container das flexboxes.
-                    <ol>
-                        <li>Main-axis (eixo x): padrão para row é da esquerda para direita.</li>
-                            <ul>
-                                <li>Main-start e main-end</li>
-                            </ul>
-                        <li>Cross-axis (eixo-y): padrão para column é de cima para baixo.</li>
-                            <ul>
-                                <li>Cross-start e cross-end</li>
-                            </ul>
+                <p>Flexboxes tem uma uma hierarquia com o container (chamado de pai) e com itens dentro desse container.</p>
+                <p>Para usar o Flexbox: 
+                    <ol type="1">
+                        <li>Classificar as tags de Div que serão usadas na flexbox com uma classe</li>
+                        <li>Identificar no CSS a classe da div pai(container) e atributar com display="flex"</li>
+                        <li>Na classe da div item, atributar com flex="auto"</li>
                     </ol>
-                </p>
-                <h2>Flex-wrap</h2>
-                    <p>Trata-se da forma como os items se comportam após diminuir o container.
-                        <ul>
-                            <li>No-wrap: items são comprimidos até o limite, depois de atingir o limite, eles quebram</li>
-                            <li>wrap: quebra o ultimo elemento no sentido do cross-axis.</li>
-                            <li>wrap-reverse: quebra o ultimo elemento no sentido contrário do cross-axis.</li>
-                        </ul>
+                </p> 
+                <h2>Flex-direction</h2>
+                    <ol>
+                            <li>Row (linha): da esquerda para direita (ou direita para esquerda nos idiomas correspondentes, como japonês e árabe).</li>
+                            <li>Row-reverse: da esquerda para direita</li>
+                            <li>Column (coluna): de cima para baixo</li>
+                            <li>Column-reverse: de baixo para cima </li>
+                    </ol>
+                <h2>Eixos/axis</h2>
+                    <p> Os eixos ficam bem no meio do container das flexboxes.
+                        <ol>
+                            <li>Main-axis (eixo x): padrão para row é da esquerda para direita.</li>
+                                <ul>
+                                    <li>Main-start e main-end</li>
+                                </ul>
+                            <li>Cross-axis (eixo-y): padrão para column é de cima para baixo.</li>
+                                <ul>
+                                    <li>Cross-start e cross-end</li>
+                                </ul>
+                        </ol>
                     </p>
-                <h2>Short-hand: flex-flow</h2>
-                    <p>Propriedade que permite unir em 1 linha o flex-direction com o flex-wrap:</p>
-                        <pre>
-div.container {
-   display: flex;
-   flex-flow: row wrap;
-}
-                        </pre>
-                        <p>Usar flex-flow é recomendação da W3C (world-wide-web consortium).</p>
-                <h2>Alinhamento dos eixos: </h2>
-                    <h3>Alinhamento eixo horizontal</h3>
-                        <p>Justify-content</p>
+                    <h2>Flex-wrap</h2>
+                        <p>Trata-se da forma como os items se comportam após diminuir o container.
                             <ul>
-                                <li>flex-start: primeiro elemento no main-start, sem espaço entre elementos e espaço em branco após todos os elementos;</li>
-                                <li>flex-end: primeiro elemento no main-end, sem espaço entre elementos e espaço em branco antes todos os elementos;</li>
-                                <li>center: elementos centralizados, sem espaço entre elementos e espaço em branco no main-start e main-end;</li>
-                                <li>space-between: primeiro e ultimo elemento fixados nas extremidades (main-start e main-end) e demais elementos centralizados com espaçamento igual entre eles;</li>
-                                <li>space-evenly: elementos centralizados com espaços iguais entre eles e nas extremidades;</li>
-                                <li>space-around: todos os elementos com um espaço igual no começo e fim de cada elemento, de forma que as extremidades ficam com um espaçamento igual a metade do espaçamento entre elementos.</li>
+                                <li>No-wrap: items são comprimidos até o limite, depois de atingir o limite, eles quebram</li>
+                                <li>wrap: quebra o ultimo elemento no sentido do cross-axis.</li>
+                                <li>wrap-reverse: quebra o ultimo elemento no sentido contrário do cross-axis.</li>
                             </ul>
-                            <p>Para entender melhor, veja a imagem abaixo:</p>
-                            <a href="imagens/justify-content flexible boxes.png" target="_blank"><img src="imagens/justify-content flexible boxes.png"></a>
-                            <p>Importante: o justify-content conflita com o "flex:auto;", se atributado aos itens do contâiner.</p>
-                    <h3>Alinhamento eixo transversal (vertical/cross-axis)</h3>    
-                        <p>align-itens</p>
+                        </p>
+                    <h2>Short-hand: flex-flow</h2>
+                        <p>Propriedade que permite unir em 1 linha o flex-direction com o flex-wrap:</p>
+                            <pre>
+    div.container {
+    display: flex;
+    flex-flow: row wrap;
+    }
+                            </pre>
+                            <p>Usar flex-flow é recomendação da W3C (world-wide-web consortium).</p>
+                    <h2>Alinhamento dos eixos: </h2>
+                        <h3>Alinhamento eixo horizontal</h3>
+                            <p>Justify-content</p>
+                                <ul>
+                                    <li>flex-start: primeiro elemento no main-start, sem espaço entre elementos e espaço em branco após todos os elementos;</li>
+                                    <li>flex-end: primeiro elemento no main-end, sem espaço entre elementos e espaço em branco antes todos os elementos;</li>
+                                    <li>center: elementos centralizados, sem espaço entre elementos e espaço em branco no main-start e main-end;</li>
+                                    <li>space-between: primeiro e ultimo elemento fixados nas extremidades (main-start e main-end) e demais elementos centralizados com espaçamento igual entre eles;</li>
+                                    <li>space-evenly: elementos centralizados com espaços iguais entre eles e nas extremidades;</li>
+                                    <li>space-around: todos os elementos com um espaço igual no começo e fim de cada elemento, de forma que as extremidades ficam com um espaçamento igual a metade do espaçamento entre elementos.</li>
+                                </ul>
+                                <p>Para entender melhor, veja a imagem abaixo:</p>
+                                <a href="imagens/justify-content flexible boxes.png" target="_blank"><img src="imagens/justify-content flexible boxes.png"></a>
+                                <p>Importante: o justify-content conflita com o "flex:auto;", se atributado aos itens do contâiner.</p>
+                        <h3>Alinhamento eixo transversal (vertical/cross-axis)</h3>    
+                            <p>align-itens</p>
+                                <ul>
+                                    <li>flex-start e flex end: funcionamento similiar ao que acontece no justify-content</li>
+                                    <li>stretch: estica os elementos para colarem no cross-start e no cross-end<li>
+                                    <li>center: centraliza verticalmente</li>
+                                </ul>
+                            <p>O align itens não possui atributos que permitam espaçamento entre itens que funcionem de forma similar ao space-between, space-evenly e space-around. Porém existe outro atributo que faz isso no cross-axis.</p>
+                        <h3>Alinhamento para conteúdo empacotado no eixo transversal</h3>
+                            <p>align-content</p>
+                                <ul>
+                                    <li>stretch: estica os elementos para colarem nas extremidades da linha e da caixa</li>
+                                    <li>flex-start: primeiro elemento no cross-start, sem espaço entre elementos e espaço em branco após todos os elementos;</li>
+                                    <li>flex-end: primeiro elemento no cross-end, sem espaço entre elementos e espaço em branco antes todos os elementos;</li>
+                                    <li>center: elementos centralizados, sem espaço entre elementos e espaço em branco no main-start e main-end;</li>
+                                    <li>space-between: primeiro e ultimo elemento fixados nas extremidades (cross-start e cross-end) e demais elementos centralizados com espaçamento igual entre eles;</li>
+                                    <li>space-evenly: elementos centralizados com espaços iguais entre eles e nas extremidades;</li>
+                                    <li>space-around: todos os elementos com um espaço igual no começo e fim de cada elemento, de forma que as extremidades ficam com um espaçamento igual a metade do espaçamento entre elementos.</li>
+                                </ul>
+                    <h2>Propriedades para itens</h2>
+                        <p>Cada uma das propriedades abaixo pode ser colocada dentro da classe de cada item, para que valha a todos os itens ou pode ser colocado um ID para cada item e o ID modificado individualmente para aplicar a propriedade a itens específicos e diferenciar os itens.</p>
+                        <h3>order</h3>
+                            <p>Adiciona-se dentro do item no html a propriedade style="order: x;". Isso vai dar uma numeração (x) para o item e dessa forma o CSS irá reordenar os itens para seguir a ordem colocada.</p>
+                            <p>Pode-se dar um ID para o item e alterar a ordem dos itens individualmente para cada CSS, com a propriedade "order"</p>
+                        <h3>align-self</h3>
+                            <p>Alinha os itens no eixo transversal/vertical/cross-axis, sobrebompondo a configuração herdada do container pai</p>
+                                <ul>
+                                    <li>auto: herda a configuração do container pai (que pode ser tanto a padrão ou a modificado, se for o caso);</li>
+                                    <li>flex-start: primeiro elemento no cross-start, sem espaço entre elementos e espaço em branco após todos os elementos;</li>
+                                    <li>flex-end: primeiro elemento no cross-end, sem espaço entre elementos e espaço em branco antes todos os elementos;</li>
+                                    <li>center: elementos centralizados, sem espaço entre elementos e espaço em branco no main-start e main-end;</li>
+                                    <li>stretch: estica os elementos para colarem nas extremidades da linha e da caixa</li>
+                                </ul>
+                            <a href="imagens/align-self-flexible boxes.png" target="_blank"><img src="imagens/align-self-flexible boxes.png"></a>
+                        <h3>flex-basis</h3>
+                            <p>Determina o tamanho dos itens individualmente.</p>
+                                <ul>
+                                    <li>auto: o tamanho do item é determinado pelo tamanho do seu conteúdo. Itens com conteúdo grande ficam maiores que os outros com conteúdo menor.</li>
+                                    <li>medida em px: dita o tamanho de cada item individualmente até onde houver espaço. caso os itens fiquem maiores que o container, eles irão diminuir de tamanho por igual para se encaixarem no container.</li>
+                                </ul>
+                        <h3>flex-grow</h3>
+                            <p>Determina se o tamanho pode aumentar. Por padrão é "não", ou seja, 0. </p>
+                        <h3>flex-shrink</h3>
+                            <p>Determina se o tamanho pode diminuir. Por padrão é "sim", ou seja, 1. </p>
+                        <h3>Valores diferentes de 0 e 1 para flex-grow e flex-shrink.</h3>
+                            <p>Pode-se atribuir qualquer valor positivo aos itens, sendo que ao atribuir valores maiores que 0, eles crescem de forma proporcional a seus valores. Ou seja, tendo 4 elementos, sendo eles com valores 0, 1, 2 e 3, respectivamente, eles crescerão da seguinte forma:</p>
                             <ul>
-                                <li>flex-start e flex end: funcionamento similiar ao que acontece no justify-content</li>
-                                <li>stretch: estica os elementos para colarem no cross-start e no cross-end<li>
-                                <li>center: centraliza verticalmente</li>
+                                <li>0: não cresce/diminui</li>
+                                <li>1: cresce/diminui igual a <math><mfrac><mn>1</mn><mn>6</mn></mfrac></math> do somatório total de valores de flex-grow/flex-shrink dos itens.</li>
+                                <li>2: cresce/diminui igual a <math><mfrac><mn>1</mn><mn>3</mn></mfrac></math> ou (<math><mfrac><mn>2</mn><mn>6</mn></mfrac></math>) do somatório total de valores de flex-grow/flex-shrink dos itens.</li>
+                                <li>3: cresce igual a <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math> ou (<math><mfrac><mn>3</mn><mn>6</mn></mfrac></math>) do somatório total de valores de flex-grow/flex-shrink dos itens.</li>
                             </ul>
-                        <p>O align itens não possui atributos que permitam espaçamento entre itens que funcionem de forma similar ao space-between, space-evenly e space-around. Porém existe outro atributo que faz isso no cross-axis.</p>
-                <h2>Padrões</h2>
-                    <ul>
-                        <li>Flex-direction: row;</li>
-                        <li>Flex-wrap: nowrap;</li>
-                        <li>justify-content: flex-start;</li>
-                        <li>align-itens: stretch</li>
-                    </ul>
+                        <h3>Short-hand pra flex-grow, flex-shrink e flex-basis.</h3>
+                            <p>usa-se a propriedade flex, colocando os valores na ordem de flex-grow, flex-shrink e flex-basis, respectivamente. Por exemplo:</p>
+                            <ul>
+                                <li>flex-grow: 0;</li>
+                                <li>flex-shrink: 1;</li>
+                                <li>flex-basis: 150px;</li>
+                                <li>= flex: 0 1 150px;</li>
+                            </ul>
+                            <p>Caso queira-se atribuir valores padrão, pode-se nomear como flex: initial (flex: 0 1 auto;).</p>
+                            <p>Caso queira-se atribuir valores para ausencia de flexibilidade, pode-se nomear como flex: none (flex: 0 0 auto;).</p>
+                            <p>Caso queira-se atribuir valores para máxima flexibilidade, pode-se nomear como flex: none (flex: 1 1 auto;).</p>
+                            <p>Caso se coloque apenas um valor depois de "flex:", entende-se que esse valor se refere ao flex-grow (flex: 3, que é igual a flex: 3 1 auto) e os demais valores são padrão (e assim por diante).</p>
+                            
+                    <h2>Padrões</h2>
+                        <h3>Para o container pai</h3>
+                            <ul>
+                                <li>Flex-direction: row;</li>
+                                <li>Flex-wrap: nowrap;</li>
+                                <li>justify-content: flex-start;</li>
+                                <li>align-itens: stretch</li>
+                                <li>align-content: stretch</li>
+                            </ul>
+                        <h3>Para os itens</h3>
+                            <ul>
+                                <li>order: 0;</li>
+                                <li>align-self: auto;</li>
+                                <li>flex-basis: auto;</li>
+                                <li>flex-shrink: 1;</li>
+                                <li>flex-grow: 0;</li>
+                                <li>flex: 0 1 auto; (ou initial)</li>
+                            </ul>
         </section>
     </main>
     <footer>
