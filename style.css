@@ -1,8 +1,10 @@
 @charset "utf-8";
+
 @font-face  {
     font-family: 'Cursiva2';
-    src: url('fonts/Sparkling Horizon.ttf') format('truetype'), url('fonts/Sparkling Horizon.otf') format('opentype');
+    src: url('fonts/Sparkling Horizon.ttf') format('truetype'), url('fonts') format('opentype');
 }
+
 
 :root { /*aquilo dentro de root é algo que se aplica a todas as pastas e arquivos dentro do código*/
     --cor0: darkblue; 
