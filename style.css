@@ -209,6 +209,7 @@ div.video > iframe {
     table-layout: fixed; /*Deixar todas as colunas e linhas com a mesma largura*/
     position: relative; /*Pra deixar o cabeçalho fixado*/
     overflow-x: auto;
+    display: block;
 }
 
 thead > tr > th { /*Pra deixar o cabeçalho fixado (usar junto do table {position: relative;}*/
